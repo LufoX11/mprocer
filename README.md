@@ -1,6 +1,6 @@
 # mProcer
 
-mProcer fue una app diseñada para la búsqueda y reserva de vuelos comerciales. Basada en jQuery Mobile y Phonegap, utilizando Slim Framework como backend, estuvo disponible para las tiendas de Android y iOS.
+mProcer fue una app diseñada como motor de búsqueda y reserva de vuelos comerciales. Estuvo basada en jQuery Mobile y Phonegap, utilizando Slim Framework como backend. Estuvo disponible para las tiendas de Android y iOS.
 
 ### IMPORTANTE
 
