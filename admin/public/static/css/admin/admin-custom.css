@@ -1,0 +1,314 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+fieldset.imagesGallery,
+fieldset.pagesGallery,
+fieldset.filesGallery {
+    margin-bottom: .6em;
+}
+#webImagesList-imgup-form .ui-select,
+#webFiles-fileup-form .ui-select,
+#webVideos-videoup-form .ui-select,
+#webPages-addpage-fieldset .ui-select {
+    display: inline-block;
+}
+.gallery.admin-gallery-list {
+    margin-top: 3px;
+}
+    .admin-gallery-list li a {
+        border: 3px solid #3c3c3c;
+        border-radius: .6em;
+        -moz-border-radius: .6em;
+        -webkit-border-radius: .6em;
+        text-decoration: none;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+        .admin-gallery-list li a.gallery-elements img {
+            width: 80px;
+            height: 80px;
+            border-radius: 6px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+        }
+        .admin-gallery-list li a.options div {
+            display: block;
+            width: 100%;
+            border-radius: 6px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            font-size: 12px;
+        }
+        .admin-gallery-list li a.options.delete div {
+            background: #396B9E;
+            background: -moz-linear-gradient(top, #5F9CC5 0%, #396B9E 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5F9CC5), color-stop(100%, #396B9E));
+            text-shadow: 0 1px 1px #194B7E;
+            color: white;
+        }
+        .admin-gallery-list li a.options.copy div,
+        .admin-gallery-list li a.options.edit div,
+        .admin-gallery-list li a.options.download div {
+            background: #333;
+            background: -moz-linear-gradient(top, #444 0%, #1D1D1D 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444), color-stop(100%, #1D1D1D));
+            text-shadow: 0 1px 1px #194B7E;
+            color: white;
+        }
+        .admin-gallery-list li a.options div p {
+            padding: 3px;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            overflow: hidden;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+#webImagesSorting-sorting-list {
+    margin: -13px -16px;
+}
+    #webImagesSorting-sorting-list li.ui-li-last,
+    #webImagesSorting-sorting-list li.ui-li-last img {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        -moz-border-radius-bottomleft: 0;
+        -moz-border-radius-bottomright: 0;
+        -webkit-border-bottom-left-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+    }
+#newsImages-imgup-form,
+#webImagesList-imgup-form,
+#webVideos-videoup-form,
+#webFiles-fileup-form {
+    text-align: center;
+}
+#newsEdit-summary {
+    max-height: 100px;
+}
+#newsEdit-saveNews li label {
+    width: 100%;
+}
+#newsEdit-saveNews li legend {
+    font-weight: normal;
+}
+#newsEdit-push-test-email {
+    max-width: 321px;
+}
+#page-services .config-sample textarea {
+    height: 400px;
+    max-height: 400px;
+}
+#page-services div.ui-select {
+    width: auto;
+    vertical-align: top;
+}
+#page-services textarea.ui-input-text.full-size {
+    width: 98%;
+}
+#page-services div.ui-btn-inline {
+    margin-top: 0;
+}
+#services-fileup-form-filelist fieldset {
+    margin-top: 9px;
+}
+#message-viewer {
+    height: 500px;
+    max-height: 500px;
+}
+#message-container input[type="text"], #message-container textarea {
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+}
+#page-messages .ui-listview-filter-inset {
+    margin-top: 0;
+}
+.ui-field-contain .ui-btn.ui-submit {
+    width: auto;
+}
+.banners .ui-li-aside em {
+    padding-right: 27px;
+}
+.charts.no-data {
+    border: 2px solid #999;
+    position: relative;
+}
+    .charts.no-data div, .charts.no-data em {
+        position: absolute;
+        padding: 3px 0 3px 6px;
+    }
+    .charts.no-data em {
+        margin-top: 30px;
+    }
+.ui-li-thumb {
+    margin-top: 1px;
+}
+#news-list .ui-li-link-alt .ui-btn-inner,
+#translations-list .ui-li-link-alt .ui-btn-inner {
+    border-top: none;
+    border-bottom: 1px solid #111;
+}
+#news-list .ui-li-last .ui-li-link-alt .ui-btn-inner,
+#translations-list .ui-li-last .ui-li-link-alt .ui-btn-inner {
+    border-bottom: none;
+}
+#news-list .ui-li-last .ui-btn-text a img {
+    border-bottom-left-radius: .6em;
+    -moz-border-radius-bottomleft: .6em;
+    -webkit-border-bottom-left-radius: .6em;
+}
+#news-list .ui-btn-text a p.alert {
+    color: red;
+    font-weight: bold;
+}
+.li-container-p {
+    margin-top: 3px;
+    margin-bottom: -12px;
+}
+/* Enhancement for custom.css -> .richList */
+.richList li img {
+    border: 3px solid #3c3c3c;
+    border-radius: .6em;
+    -moz-border-radius: .6em;
+    -webkit-border-radius: .6em;
+}
+#webFilesEdit-edit .richList li img {
+    border: none;
+    margin: 18px 9px 9px;
+}
+.pagesGallery.others,
+.filesGallery.others {
+    padding: 10px 15px;
+    border-top-right-radius: .6em;
+    border-top-left-radius: .6em;
+    -moz-border-top-right-radius: .6em;
+    -moz-border-top-left-radius: .6em;
+    -webkit-border-top-right-radius: .6em;
+    -webkit-border-top-left-radius: .6em;
+    background: #333;
+    background: -moz-linear-gradient(top, #444 0%, #1D1D1D 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444), color-stop(100%, #5D5D5D));
+    margin-top: -11px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-bottom: 1px solid #111;
+}
+.imagesGallery .title {
+    padding: 0 15px;
+    background: #333;
+    background: -moz-linear-gradient(top, #444 0%, #1D1D1D 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444), color-stop(100%, #5D5D5D));
+    margin: 21px -15px 9px -15px;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+.imagesGallery .title.first {
+    border-top: none;
+    margin-top: -11px;
+    border-top-right-radius: .6em;
+    border-top-left-radius: .6em;
+    -moz-border-top-right-radius: .6em;
+    -moz-border-top-left-radius: .6em;
+    -webkit-border-top-right-radius: .6em;
+    -webkit-border-top-left-radius: .6em;
+}
+    .imagesGallery .title .text {
+        margin-right: 6px;
+    }
+    .imagesGallery .title .ui-btn {
+        margin-left: 0;
+        margin-right: 0;
+    }
+#webImagesEdit-edit .ui-li .ui-checkbox, #webFilesEdit-edit .ui-li .ui-checkbox {
+    display: inline-block;
+}
+.fileInfo {
+    position: absolute;
+    top: 102px;
+    left: 6px;
+    font-weight: normal;
+    font-size: 12px;
+    width: 87px;
+    text-align: center;
+}
+    .fileInfo p {
+        margin: 0;
+    }
+    .fileInfo p.title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+#webFiles-gallery li img {
+    margin: 9px 0 3px;
+}
+#webFiles-gallery .fileInfo {
+    position: static;
+    margin-bottom: 6px;
+}
+.fileGalleryTitle p {
+    width: 74px;
+    word-break: break-all;
+    font-size: 11px;
+    font-weight: normal !important;
+    white-space: normal;
+}
+#webVideos-videoup-form .ui-input-text {
+    max-width: 500px;
+    display: inline-block;
+}
+.txtip {
+    position: relative;
+}
+    .txtip-label {
+        position: absolute;
+        padding: 3px 6px;
+        background-color: black;
+        font-size: .7em;
+        filter: alpha(opacity=75);
+        opacity: .75;
+        color: white;
+    }
+        .txtip-label.yt-time {
+            bottom: 4px;
+            right: 9px;
+        }
+#developedby {
+    float: right;
+    margin: 15px;
+}
+.ridership {
+    width: 100px;
+}
+.ads-space {
+    font-size: 30px !important;
+    height: 80px !important;
+    text-align: center;
+}
+.train-protection-title {
+    padding-top: 10px !important;
+}
+.passenger-title {
+    margin-right: 10px;
+}
+.ui-body-f {
+    border: 1px solid #E4142C;
+    background: #FFD2D3;
+}
+#stats-container {
+    text-align: center;
+}
+#stats-share {
+    max-width: 500px;
+}
+
+/* Styles for printing */
+@media print {
+
+    .ui-header,
+    .no-print
+    {
+        display: none !important;
+    }
+}

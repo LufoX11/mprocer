@@ -1,0 +1,47 @@
+<html>
+<head></head>
+<body>
+    <div data-role="page" data-theme="a" id="page-complaints">
+
+        <!-- CONTENT -->
+        <div data-role="content">
+            <form id="page-complaints-form" method="post">
+                <ul data-role="listview">
+                    <li class="content-text">
+                        <h3>Contacto</h3>
+                        <p>Contactate con Atención al cliente y envianos tu consulta, reclamo o sugerencia.</p>
+                    </li>
+                    <li data-role="fieldcontain" class="form-enhanced">
+                        <div data-role="fieldcontain">
+                            <input id="page-complaints-form-name" type="text" name="name" placeholder="Ingresá tu Nombre" />
+                        </div>
+                        <div data-role="fieldcontain">
+                            <input id="page-complaints-form-email" type="email" name="email" placeholder="Ingresá tu Email" />
+                        </div>
+                        <div data-role="fieldcontain">
+                            <input id="page-complaints-form-phone" type="text" name="phone" placeholder="Ingresá tu Teléfono. Ej: (11) 4321-1234" />
+                        </div>
+                        <div data-role="fieldcontain">
+                            <select id="page-complaints-form-reason" name="reason">
+                                <option value="ask" selected="selected">Consulta</option>
+                                <option value="complaint">Queja o Reclamo</option>
+                                <option value="suggestion">Sugerencia</option>
+                            </select>
+                        </div>
+                        <div data-role="fieldcontain">
+                            <textarea id="page-complaints-form-description" name="description"
+                                placeholder="Escribí tu consulta"></textarea>
+                        </div>
+                    </li>
+                    <li data-role="fieldcontain">
+                        <button name="submit" class="ui-btn ui-btn-raised ui-btn-margin ui-corner-all clr-primary zmdi-icon">
+                            <i class="zmdi zmdi-check"></i>
+                            Enviar
+                        </button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

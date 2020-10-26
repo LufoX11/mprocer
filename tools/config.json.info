@@ -1,0 +1,60 @@
+{
+    "databases": {
+        "imaat": {
+            "host": "localhost",
+            "user": "root",
+            "password": "",
+            "database": "imaat"
+        },
+        "default": {
+            "host": "localhost",
+            "user": "root",
+            "password": "",
+            "database": "mprocer"
+        }
+    },
+    "apache": {
+        "user": "www-data",
+        "group": "www-data"
+    },
+    "frontend": {
+        "modelAppName": "secontur"
+    },
+    "database": {
+        "modelAdminUser": "consultar.secontur"
+    },
+    "paths": {
+        "frontend": "/var/www/imaat/mob/mprocer",
+        "backend": "/var/www/imaat/v2.mprocer"
+    },
+    "ssh": {
+
+        /**
+         * SSH key ID.
+         * Eg: ~/.ssh/imaat.pub ("imaat" is the key ID).
+         * If you don't use key aliases then use "bitbucket.org", and default key (usually id_rsa) will be used instead.
+         * @link https://confluence.atlassian.com/bitbucket/configure-multiple-ssh-identities-for-gitbash-mac-osx-linux-271943168.html
+         */
+        "id": "imaat"
+    },
+    "api": {
+        "bitbucket": {
+            "users": {
+                "admin": {
+                    "user": "luciano.fantuzzi@imaat.com.ar",
+                    "password": "4ojPM0sceigqWAf"
+                },
+                "readonly": {
+                    "user": "soporte-imaat",
+                    "password": "dRAjBuk"
+                }
+            },
+            "project": {
+                "key": "CLMB"
+            }
+        },
+        "pgb": {
+            "token": "oCzphpcf6XjaVnmWmK44"
+        }
+    }
+}

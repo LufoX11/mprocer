@@ -1,0 +1,10 @@
+.*.swp
+*.bak
+*~
+*.log
+*.vim
+config.json
+!README
+node_modules
+bower_components
+.trash

@@ -1,0 +1,262 @@
+{
+    "repository": {
+
+        /**
+         * Repository name in GIT.
+         *
+         * @file FE: package.json (repository.url | homepage)
+         * @file FE: bower.json (homepage)
+         * @bitbucket: Repository name
+         * @pgb: Repository source
+         */
+        "name": "mob-mprocer-secontur"
+    },
+    "application": {
+
+        /**
+         * Application ID.
+         * IMPORTANT: It NEEDS to be present in company->shortName.
+         *
+         * @file FE: config.xml (id)
+         * @file FE: js/Config.js (api.core.service)
+         * @folder BE: app/certificates/push/ios/service
+         * @folder BE: public/static/img/services/service
+         * @file BE: app/config/emails.ini (service)
+         * @file BE: app/config/push.ini (service)
+         * @file BE: app/config/main.ini (service)
+         * @file BE: app/config/services.ini (service)
+         * @db: (imaat.admin_users.name | imaat.admin_users.username | imaat.admin_users.service | mprocer.service.name)
+         * @pgb: Application title
+         */
+        "id": "secontur",
+
+        /**
+         * Locale code lang and charset.
+         *
+         * @file BE: app/config/services.ini (service.locale)
+         */
+        "locale": "es_AR.UTF-8",
+
+        /**
+         * System timezone for cron and other related functions.
+         *
+         * @file BE: app/config/services.ini (service.timezone)
+         */
+        "timezone": "America/Argentina/Buenos_Aires",
+
+        /**
+         * Default weather location zone.
+         *
+         * @file BE: app/config/services.ini (service.defaultWeather)
+         */
+        "defaultWeather": "Argentina/Buenos_Aires",
+
+        /**
+         * External APIs configuration.
+         */
+        "api": {
+
+            /**
+             * Google API.
+             *
+             * @file BE: app/config/push.ini (google.api_key | google.project_number)
+             */
+            "google": {
+                "apiKey": "AIzaSyD2GCLxJs1-cIeBlDGt6stVze4UCz3c0vA",
+                "projectNumber": "87994900416"
+            }
+        },
+
+        /**
+         * Security certificates.
+         */
+        "certificates": {
+
+            "google": {
+
+                /**
+                 * Android Release key.
+                 *
+                 * @pgb: Key unlocking
+                 */
+                "release": {
+
+                    /**
+                     * Android key name.
+                     *
+                     * @pgb: Android key name
+                     */
+                    "name": "Release",
+
+                    "alias": "release_key",
+                    "password": "bE0GWUcHYBeelVa"
+                }
+            },
+
+            "apple": {
+
+                /**
+                 * iOS Distribution certificate.
+                 *
+                 * @pgb: Key unlocking
+                 */
+                "distribution": {
+
+                    /**
+                     * Mobile provision file name.
+                     *
+                     * @pgb: iOS key name
+                     */
+                    "mobileprovision": "Secontur",
+
+                    "password": "p5Kv6GYfvW7u54xC"
+                },
+
+                /**
+                 * iOS Push certificate.
+                 *
+                 * @file BE: app/config/push.ini (ios.passphrase)
+                 */
+                "push": {
+                    "passphrase": ""
+                }
+            }
+        }
+    },
+    "company": {
+
+        /**
+         * Long company name.
+         *
+         * @file FE: js/Config.js (service.name)
+         */
+        "name": "Secontur Lufthansa City Center",
+
+        /**
+         * Short company name.
+         * IMPORTANT: It NEEDS to have application->id as part of it.
+         *
+         * @file FE: config.xml (name)
+         * @file FE: js/Config.js (custom.header.title | service.shortName)
+         * @file BE: app/config/services.ini (service)
+         * @db: mprocer.services.fullname
+         */
+        "shortName": "Secontur LCC",
+
+        /**
+         * Corporate company name.
+         *
+         * @file FE: js/Config.js (service.corporateName)
+         */
+        "corporateName": "Secontur SRL",
+
+        /**
+         * Company description.
+         *
+         * @file FE: config.xml (description)
+         */
+        "description": "Secontur, Empresa de Viajes y Turismo",
+
+        /**
+         * Physical address of the company.
+         *
+         * @file FE: js/Config.js (service.address)
+         */
+        "address": "Suipacha 207, 2° Piso Of. 213",
+
+        /**
+         * Zip code of the company.
+         *
+         * @file FE: js/Config.js (service.zipCode)
+         */
+        "zipCode": "C1008AAE",
+
+        /**
+         * City company.
+         *
+         * @file FE: js/Config.js (service.city)
+         */
+        "city": "Buenos Aires",
+
+        /**
+         * Country company.
+         *
+         * @file FE: js/Config.js (service.country)
+         */
+        "country": "Argentina",
+
+        /**
+         * Business phone.
+         *
+         * @file FE: js/Config.js (service.phone)
+         */
+        "phone": "(+54) 11 4321-1000",
+
+        /**
+         * Company website.
+         *
+         * @file FE: js/Config.js (service.www)
+         */
+        "www": "http://www.seconturlcc.tur.ar",
+
+        /**
+         * Company location.
+         *
+         * @file FE: js/Config.js (service.officeGeoCoordinates)
+         */
+        "officeGeoCoordinates": {
+            "lat": "-34.605873", // Latitude
+            "lng": "-58.37932" // Longitude
+        },
+
+        /**
+         * Company emails.
+         *
+         * @file FE: js/Config.js (service.emails)
+         * @file BE: app/config/emails.ini (service.contact.toEmail)
+         */
+        "email": {
+            "info": "info@seconturlcc.tur.ar",
+            "sales": "webibe@seconturlcc.tur.ar"
+        }
+    },
+
+    /**
+     * Theme colors.
+     *
+     * @file FE: css/_base.scss (Material Design Scheme)
+     */
+    "theme": {
+        "darkPrimaryColor": "#F57C00",
+        "primaryColor": "#FF9800",
+        "lightPrimaryColor": "#FFE0B2",
+        "textIcons": "#FFF",
+        "accentColor": "#536DFE",
+        "primaryText": "#212121",
+        "secondaryText": "#727272"
+    },
+
+    /**
+     * Partner API data.
+     */
+    "partner": {
+
+        /**
+         * Name of the partner.
+         *
+         * @db: (imaat.admin_users.name | imaat.admin_users.username)
+         */
+        "name": "ConsultAr",
+
+        /**
+         * API configuration.
+         *
+         * @file BE: app/config/services.ini (apiSource | source[key] | source[url])
+         */
+        "api": {
+            "source": "consultar",
+            "key": "secontur2015",
+            "url": "http://secontur.wemkteyou.com.ar/mkte_air/json/"
+        }
+    }
+}

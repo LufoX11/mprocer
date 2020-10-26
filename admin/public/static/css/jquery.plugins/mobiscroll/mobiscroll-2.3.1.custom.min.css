@@ -1,0 +1,343 @@
+.dw {
+    box-sizing: border-box;
+    color: #000;
+    font-family: arial,verdana,sans-serif;
+    font-size: 12px;
+    left: 0;
+    moz-box-sizing: border-box;
+    moz-user-select: none;
+    ms-touch-action: none;
+    ms-user-select: none;
+    position: absolute;
+    text-shadow: none;
+    top: 5%;
+    webkit-box-sizing: border-box;
+    webkit-user-select: none;
+    z-index: 1001;
+}
+.dwi {
+    box-shadow: 0 0 12px #387BBE;
+    display: inline-block;
+    margin: 6px 0;
+    moz-box-shadow: 0 0 12px #387BBE;
+    position: static;
+    webkit-box-shadow: 0 0 12px #387BBE;
+}
+.dwwr {
+    min-width: 170px;
+    padding: 0 10px;
+    text-align: center;
+    zoom: 1;
+}
+.dwo {
+    background: #000;
+    filter: Alpha(Opacity=70);
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.dw-bubble-bottom {
+    margin-top: 18px;
+}
+.dw-bubble-top {
+    margin-top: -18px;
+}
+.dw-bubble .dw-arrw {
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.dw-bubble-top .dw-arrw {
+    bottom: -36px;
+}
+.dw-bubble-bottom .dw-arrw {
+    top: -36px;
+}
+.dw-bubble .dw-arrw-i {
+    height: 36px;
+    margin: 0 30px;
+    position: relative;
+}
+.dw-bubble .dw-arr {
+    display: block;
+}
+.dw-arr {
+    border-style: solid;
+    border-width: 18px 18px;
+    display: none;
+    height: 0;
+    left: 0;
+    margin-left: -18px;
+    position: absolute;
+    width: 0;
+}
+.dw-bubble-bottom .dw-arr {
+    border-color: transparent transparent #fff transparent;
+    top: 0;
+}
+.dw-bubble-top .dw-arr {
+    border-color: #fff transparent transparent transparent;
+    bottom: 0;
+}
+.dwc {
+    display: inline-block;
+    float: none;
+    margin: 0 2px 5px 2px;
+    padding-top: 30px;
+}
+.dwcc {
+    clear: both;
+}
+.dwl {
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    top: -30px;
+    white-space: nowrap;
+    width: 100%;
+}
+.dwv {
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+}
+.dwrc {
+    border-radius: .6em;
+    -webkit-border-radius: .6em;
+    -moz-border-radius: .6em;
+}
+.dwwc {
+    background: #000;
+    margin: 0;
+    padding: 0 2px;
+    position: relative;
+    zoom: 1;
+}
+.dwwl {
+    background: #888;
+    background: linear-gradient(#000 0,#333 35%,#888 50%,#333 65%,#000 100%);
+    background: -moz-linear-gradient(#000 0,#333 35%,#888 50%,#333 65%,#000 100%);
+    background: -o-linear-gradient(#000 0,#333 35%,#888 50%,#333 65%,#000 100%);
+    background: -webkit-gradient(linear,left bottom,left top,from(#000),color-stop(0.35,#333),color-stop(0.50,#888),color-stop(0.65,#333),to(#000));
+    margin: 4px 2px;
+    position: relative;
+    z-index: 5;
+}
+.dww {
+    margin: 0 2px;
+    overflow: hidden;
+    position: relative;
+}
+.dwsc .dww {
+    background: #444;
+    background: linear-gradient(#000 0,#444 45%,#444 55%,#000 100%);
+    background: -moz-linear-gradient(#000 0,#444 45%,#444 55%,#000 100%);
+    background: -o-linear-gradient(#000 0,#444 45%,#444 55%,#000 100%);
+    background: -webkit-gradient(linear,left bottom,left top,from(#000),color-stop(0.45,#444),color-stop(0.55,#444),to(#000));
+    color: #fff;
+}
+.dww ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+.dww li {
+    display: block;
+    filter: Alpha(Opacity=30);
+    font-size: 26px;
+    line-height: 40px;
+    list-style: none;
+    margin: 0;
+    opacity: .3;
+    padding: 0 5px;
+    text-align: center;
+    text-shadow: 0 1px 1px #000;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+.dww li.dw-hl {
+    background: #fff;
+    background: rgba(255,255,255,.3);
+}
+.dww li.dw-v {
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+}
+.dww li.dw-h {
+    visibility: hidden;
+}
+.dw-i {
+    height: 100%;
+    position: relative;
+}
+.dwwb {
+    cursor: pointer;
+    height: 40px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    transition: opacity .2s linear;
+    webkit-transition: opacity .2s linear;
+    width: 100%;
+    z-index: 4;
+}
+.dwa .dwwb {
+    opacity: 0;
+}
+.dwwbp {
+    border-radius: 3px 3px 0 0;
+    font-size: 40px;
+    top: 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+}
+.dwwbm {
+    border-radius: 0 0 3px 3px;
+    bottom: 0;
+    font-size: 32px;
+    font-weight: bold;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+}
+.dwpm .dwwc {
+    background: transparent;
+}
+.dwpm .dww {
+    margin: -1px;
+}
+.dwpm .dww li {
+    text-shadow: none;
+}
+.dwpm .dwwol {
+    display: none;
+}
+.dwwo {
+    background: linear-gradient(#000 0,rgba(44,44,44,0) 52%,rgba(44,44,44,0) 48%,#000 100%);
+    background: -moz-linear-gradient(#000 0,rgba(44,44,44,0) 52%,rgba(44,44,44,0) 48%,#000 100%);
+    background: -o-linear-gradient(#000 0,rgba(44,44,44,0) 52%,rgba(44,44,44,0) 48%,#000 100%);
+    background: -webkit-gradient(linear,left bottom,left top,from(#000),color-stop(0.52,rgba(44,44,44,0)),color-stop(0.48,rgba(44,44,44,0)),to(#000));
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+.dwwol {
+    border-bottom: 1px solid #555;
+    border-top: 1px solid #333;
+    height: 0;
+    left: 0;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 1;
+}
+.dwbg .dwb {
+    background: #000;
+    background: linear-gradient(#6e6e6e 50%,#000 50%);
+    background: -moz-linear-gradient(#6e6e6e 50%,#000 50%);
+    background: -o-linear-gradient(#6e6e6e 50%,#000 50%);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0.5,#000),color-stop(0.5,#6e6e6e));
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 2px;
+    overflow: hidden;
+    padding: 0 15px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-shadow: 0 -1px 1px #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    white-space: nowrap;
+}
+.dwbc {
+    clear: both;
+    padding: 5px 0;
+    text-align: center;
+}
+.dwbc:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+.dwbw {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 50%;
+    z-index: 5;
+}
+.dwbc-p .dwbw {
+    width: 33%;
+}
+.dwhl {
+    padding-top: 10px;
+}
+.dwhl .dwl {
+    display: none;
+}
+.dwbg {
+    background: #396B9E;
+    background: -moz-linear-gradient(top, #5F9CC5 0%, #396B9E 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5F9CC5), color-stop(100%, #396B9E));
+    text-shadow: 0 1px 1px #194B7E;
+    color: white;
+    border: 1px solid #444;
+    border-radius: .6em;
+    -webkit-border-radius: .6em;
+    -moz-border-radius: .6em;
+}
+.dwbg .dwpm .dww {
+    background: #fff;
+    border: 1px solid #AAA;
+    color: #000;
+}
+.dwbg .dwwb {
+    background: #ccc;
+    box-shadow: 0 0 5px #333;
+    color: #888;
+    text-shadow: 0 -1px 1px #333;
+    webkit-box-shadow: 0 0 5px #333;
+}
+.dwbg .dwwbp {
+    background: linear-gradient(#f7f7f7,#bdbdbd);
+    background: -moz-linear-gradient(#f7f7f7,#bdbdbd);
+    background: -o-linear-gradient(#f7f7f7,#bdbdbd);
+    background: -webkit-gradient(linear,left bottom,left top,from(#bdbdbd),to(#f7f7f7));
+}
+.dwbg .dwwbm {
+    background: linear-gradient(#bdbdbd,#f7f7f7);
+    background: -moz-linear-gradient(#bdbdbd,#f7f7f7);
+    background: -o-linear-gradient(#bdbdbd,#f7f7f7);
+    background: -webkit-gradient(linear,left bottom,left top,from(#f7f7f7),to(#bdbdbd));
+}
+.dwbg .dwb-a {
+    background: #3c7500;
+    background: linear-gradient(#94c840 50%,#3c7500 50%);
+    background: -moz-linear-gradient(#94c840 50%,#3c7500 50%);
+    background: -o-linear-gradient(#94c840 50%,#3c7500 50%);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0.5,#3c7500),color-stop(0.5,#94c840));
+}
+.dwbg .dwwl .dwb-a {
+    background: #3c7500;
+    background: linear-gradient(#94c840,#3c7500);
+    background: -moz-linear-gradient(#94c840,#3c7500);
+    background: -o-linear-gradient(#94c840,#3c7500);
+    background: -webkit-gradient(linear,left bottom,left top,from(#3c7500),to(#94c840));
+}

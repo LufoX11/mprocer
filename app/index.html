@@ -1,0 +1,138 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="msapplication-tap-highlight" content="no"/> <!-- Remove Tap Highlight on Windows Phone IE -->
+
+    <!-- http://content-security-policy.com/ (Should tune up this) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' 'self' data: gap:">
+
+    <title>:: M-Procer ::</title>
+
+    <!-- CSS (Don't change the order) -->
+    <link rel="stylesheet" type="text/css" href="css/min/vendor/service.min.css?1379794007" />
+    <link rel="stylesheet" type="text/css" href="css/min/vendor/jquery.mobile.icons.min.css?1379794007" />
+    <link rel="stylesheet" type="text/css" href="css/min/vendor/jquery.mobile.structure-1.4.5.min.css?1379794007" />
+    <link rel="stylesheet" type="text/css" href="css/min/vendor/material-design-iconic-font.min.css?1379794007" />
+    <link rel="stylesheet" type="text/css" href="css/min/vendor/waves.custom.min.css?1379794007" />
+    <link rel="stylesheet" type="text/css" href="css/min/vendor/photoswipe.min.css?1379794007" />
+    <link rel="stylesheet" type="text/css" href="css/min/vendor/photoswipe.default-skin.min.css?1379794007" />
+    <link rel="stylesheet" type="text/css" href="css/min/vendor/mobiscroll.full-2.17.0.min.css?1379794007" />
+    <link data-pathmin rel="stylesheet" type="text/css" href="css/main.css?1379794007" />
+    <link data-pathmin rel="stylesheet" type="text/css" href="css/service.custom.css?1379794007" />
+
+    <!-- JS (Don't change the order) -->
+    <script data-pathmin type="text/javascript" src="js/Config.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Enhancements.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Logger.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Events.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Main.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Ui.js?1379794007"></script>
+    <script type="text/javascript" src="phonegap.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/waves.min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/json2.min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/jquery-1.11.1.min.js?1379794007"></script>
+    <script type="text/javascript"> Events.getInstance(); </script> <!-- Initialization options for JQM (MUST be called here) -->
+    <script type="text/javascript" src="js/min/vendor/jquery.mobile-1.4.5.min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/jquery.jqmi-1.0.0.min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/tinycolor-min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/jquery.makemecenter.min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/jquery.outerHTML.min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/jquery.waitforimages.min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/photoswipe.min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/photoswipe-ui-default.min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/jquery.serialize-object.min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/moment-with-locales.min.js?1379794007"></script>
+    <script type="text/javascript" src="js/min/vendor/mobiscroll.full-2.17.0.min.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Storage.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Data.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Push.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/News.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Services.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Flights.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Popups.js?1379794007"></script>
+    <script data-pathmin type="text/javascript" src="js/Forms.js?1379794007"></script>
+</head>
+<body>
+    <div data-role="page" id="page-init">
+
+        <!-- CONTENT -->
+        <div data-role="content"></div>
+    </div>
+
+    <!-- Load App Config -->
+    <script type="text/javascript"> Main.loadConfig(); </script>
+
+    <!-- App Colors -->
+    <div id="themeDarkPrimaryColor" class="hidden"></div>
+    <div id="themePrimaryColor" class="hidden"></div>
+    <div id="themeLightPrimaryColor" class="hidden"></div>
+    <div id="themeTextIcons" class="hidden"></div>
+    <div id="themeAccentColor" class="hidden"></div>
+    <div id="themePrimaryText" class="hidden"></div>
+    <div id="themeSecondaryText" class="hidden"></div>
+    <div id="themeDividerColor" class="hidden"></div>
+    <div id="themeBackgroundColor" class="hidden"></div>
+
+    <!-- Modal overlay for dialogs -->
+    <div id="modal-overlay" class="ui-popup-screen ui-overlay-a in" style="display: none;"></div>
+
+    <!-- PhotoSwipe Layer. Doc: http://photoswipe.com/documentation/getting-started.html -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+             It is a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Do not modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

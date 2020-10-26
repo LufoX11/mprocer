@@ -1,0 +1,38 @@
+{
+  "name": "mprocer",
+  "version": "1.10.0",
+  "authors": [
+    "iMaat <soporte@imaat.com.ar>"
+  ],
+  "description": "Web based mobile application through Phonegap",
+  "main": "phonegap.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "mprocer"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/imaat/mob-mprocer-secontur#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery-serialize-object": "~2.5.0",
+    "waitForImages": "~2.1.0",
+    "waves": "~0.7.2",
+    "json2": "*",
+    "moment": "~2.10.3",
+    "photoswipe": "~4.1.0",
+    "material-design-iconic-font": "~2.1.1",
+    "tinycolor": "~1.2.1"
+  },
+  "dependencies": {
+    "jquery-make-me-center": "~0.1.1"
+  }
+}

@@ -1,0 +1,62 @@
+.ui-icon-edit {
+    background-image: url("/img/white/edit.png");
+}
+.ui-icon-sort {
+    background-image: url("/img/white/sort.png");
+}
+.ui-icon-menu-home {
+    background-image: url("/img/white/menu-home.png");
+}
+.ui-icon-menu-topics {
+    background-image: url("/img/white/menu-topics.png");
+}
+.ui-icon-menu-weather {
+    background-image: url("/img/white/menu-weather.png");
+}
+.ui-icon-menu-more {
+    background-image: url("/img/white/menu-more.png");
+}
+.ui-icon-menu-messages {
+    background-image: url("/img/white/menu-messages.png");
+}
+.ui-icon-menu-users {
+    background-image: url("/img/white/menu-users.png");
+}
+.ui-icon-menu-services {
+    background-image: url("/img/white/menu-services.png");
+}
+.tablet.applet-sharer-facebook .ui-icon {
+    background: url("/img/white/applet-sharer-tb-facebook.png") 50% 50% no-repeat;
+    background-size: 24px 22px;
+}
+.tablet.applet-sharer-twitter .ui-icon {
+    background: url("/img/white/applet-sharer-tb-twitter.png") 50% 50% no-repeat;
+    background-size: 24px 22px;
+}
+.ui-icon-facebook {
+    background-image: url("/img/white/applet-sharer-tb-facebook-icon.png");
+}
+.ui-icon-twitter {
+    background-image: url("/img/white/applet-sharer-tb-twitter-icon.png");
+}
+.ui-icon-menu-stats {
+    background-image: url("/img/white/menu-stats.png");
+}
+.ui-icon-menu-news {
+    background-image: url("/img/white/menu-news.png");
+}
+.ui-icon-menu-images {
+    background-image: url("/img/white/menu-images.png");
+}
+.ui-icon-menu-videos {
+    background-image: url("/img/white/menu-videos.png");
+}
+.ui-icon-menu-files {
+    background-image: url("/img/white/menu-files.png");
+}
+.ui-icon-menu-pages {
+    background-image: url("/img/white/menu-pages.png");
+}
+.tip {
+    background: url("/img/white/guest-icon.png") no-repeat left center;
+}

@@ -1,0 +1,28 @@
+; Rutas de archivos.
+;
+; --- Rutas web
+;
+; [web]
+;
+; site[default]: Ruta default del dominio.
+; static[js]: Ruta hacia los archivos de Javascript.
+; static[css]: Ruta hacia los archivos de CSS.
+; static[img]: Ruta hacia los archivos de imágen.
+;
+; [fs] (Rutas absolutas del sistema de archivos)
+;
+; root: Ruta hacia mprocer.com
+
+; ---
+
+[web]
+
+site[default] = "http://www.mprocer.com"
+
+static[js] = "http://static.mprocer.com/js"
+static[css] = "http://static.mprocer.com/css"
+static[img] = "http://static.mprocer.com/img"
+
+[fs]
+
+root = "/var/www/mprocer.com/current"

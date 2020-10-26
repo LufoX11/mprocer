@@ -1,0 +1,25 @@
+{
+    "name": "mprocer/tools",
+    "description": "mProcer Tools",
+    "require": {
+        "monolog/monolog": "^1.19.0",
+        "pear/console_commandline": "^1.2",
+        "retrinko/ini": "^0.3.0",
+        "illuminate/database": "^5.2",
+        "hackzilla/password-generator": "^1.2",
+        "gentle/bitbucket-api": "^0.8.1",
+        "mradionov/phonegap-build-api": "^0.1.1",
+        "dflydev/dot-access-data": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Luciano Fantuzzi",
+            "email": "luciano.fantuzzi@imaat.com.ar"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "lib/"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+; Config file for translateTable script.
+
+; ---
+
+[services]
+
+current = "YandexTranslatorApi"
+
+YandexTranslatorApi[key] = "trnsl.1.1.20130813T034845Z.36016c314910624d.d5318f6d8ee5bdda941d94aaf9f559aa2a157faf"
+
+[source]
+
+database[host] = "127.0.0.1"
+database[user] = "root"
+database[password] = ""
+database[database] = "airports"
+database[port] = "3306"
+
+table[name] = "continents"
+table[fieldText] = "name_en"
+table[fieldId] = "id"
+table[fieldIdOffset] = "0"
+table[limit] = "100"
+
+lang = "en"
+
+[target]
+
+database[host] = "127.0.0.1"
+database[user] = "root"
+database[password] = ""
+database[database] = "airports"
+database[port] = "3306"
+
+table[name] = "continents"
+table[fieldId] = "id"
+table[fieldText] = "name_es"
+
+lang = "es"

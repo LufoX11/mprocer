@@ -1,0 +1,114 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi" />
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>:: M-Procer - Secontur LCC ::</title>
+</head>
+<body>
+    <div data-role="page" data-theme="a" id="page-servicesPhrases">
+
+        <!-- Page show events -->
+        <script type="text/javascript">
+
+            $("#page-servicesPhrases").one("pageshow", function () {
+
+                Services.getInstance().fetchPhrases("es", "en");
+            });
+
+            // Attach triggers
+            $("#page-servicesPhrases-fromLang, #page-servicesPhrases-toLang")
+                    .on("change", function () {
+                Services.getInstance().fetchPhrases(
+                    $("#page-servicesPhrases-fromLang").val(),
+                    $("#page-servicesPhrases-toLang").val());
+            });
+
+        </script>
+
+        <!-- LEFT PANEL -->
+        <div data-role="panel" id="panel-left" data-position="left" data-display="reveal">
+            <ul id="panel-left-menu" data-role="listview" data-inset="true" data-corners="false">
+                <li data-role="list-divider">Inicio</li>
+                <li><a href="index.html">
+                    <img src="../../img/news-icon.png" class="ui-li-icon" data-icon-name="news" />
+                    Novedades
+                </a></li>
+                <li><a href="services.html">
+                    <img src="../../img/services-icon.png" class="ui-li-icon" data-icon-name="services" />
+                    Herramientas
+                </a></li>
+                <li><a href="more.html">
+                    <img src="../../img/about-icon.png" class="ui-li-icon" data-icon-name="about" />
+                    Nosotros
+                </a></li>
+                <li><a href="settings.html">
+                    <img src="../../img/settings-icon.png" class="ui-li-icon" data-icon-name="lang" />
+                    Configuración
+                </a></li>
+            </ul>
+        </div>
+
+        <!-- HEADER -->
+        <div data-role="header" data-position="fixed">
+            <a href="#panel-left" data-icon="bars" data-iconpos="notext"></a>
+            <h3><img class="logo" src="../../img/logo-inline-header.png" /></h3>
+            <a href="index.html" data-icon="home" data-iconpos="notext"></a>
+        </div>
+
+        <!-- CONTENT -->
+        <div data-role="content">
+            <ul id="page-servicesPhrases-container" data-role="listview" data-inset="true" class="ui-hide-label">
+                <li>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <label for="page-servicesPhrases-fromLang">De</label>
+                            <select id="page-servicesPhrases-fromLang">
+                                <option value="es" selected="selected">Español</option>
+                                <option value="en">Inglés</option>
+                                <option value="pt">Portugués</option>
+                                <option value="it">Italiano</option>
+                                <option value="fr">Francés</option>
+                                <option value="de">Alemán</option>
+                            </select>
+                        </div>
+                        <div class="ui-block-b">
+                            <label for="page-servicesPhrases-toLang">A</label>
+                            <select id="page-servicesPhrases-toLang">
+                                <option value="es" disabled="disabled">Español</option>
+                                <option value="en" selected="selected">Inglés</option>
+                                <option value="pt">Portugués</option>
+                                <option value="it">Italiano</option>
+                                <option value="fr">Francés</option>
+                                <option value="de">Alemán</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <table data-role="table" id="page-servicesPhrases-equivalences"
+                            class="table-stripe ui-responsive no-title">
+                        <thead>
+                            <tr>
+                                <th>Frase</th>
+                                <th>Traducción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+        </div>
+
+        <!-- FOOTER -->
+        <div data-role="footer" class="ui-bar" data-position="fixed" data-visible-on-page-show="false"
+                data-tap-toggle="false">
+            <a href="#" data-icon="back" data-rel="back" data-iconpos="notext" class="ui-btn-left"></a>
+            <h3>© 2014 Secontur LCC</h3>
+        </div>
+    </div>
+</body>
+</html>

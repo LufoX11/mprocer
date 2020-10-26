@@ -1,0 +1,47 @@
+<html>
+<head></head>
+<body>
+    <div data-role="page" data-theme="a" id="page-servicesFlightsMultiple">
+
+        <!-- CONTENT -->
+        <div data-role="content">
+            <div id="page-servicesFlightsMultiple-container" data-role="collapsible-set" data-inset="true"
+                    class="ui-hide-label scroller-wrapper-container" data-theme="a" data-content-theme="a">
+                <div class="content-text">
+                    <div class="scroller-wrapper">
+                        <input type="hidden" id="page-servicesFlightsMultiple-from-data" />
+                        <img src="../../img/travel-from.svg" data-size="32" />
+                        <label for="page-servicesFlightsMultiple-from">Orígen</label>
+                        <a id="page-servicesFlightsMultiple-from" href="#" data-role="button" data-hiddenid-save-object="true"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true" class="ui-btn-raised"
+                            data-method="fetchAirports" data-placeholder="Ingresá Ciudad, País"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <input type="hidden" id="page-servicesFlightsMultiple-to-data" />
+                        <img src="../../img/travel-to.svg" data-size="32" />
+                        <label for="page-servicesFlightsMultiple-to">Destino</label>
+                        <a id="page-servicesFlightsMultiple-to" href="#" data-role="button" data-hiddenid-save-object="true"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true" class="ui-btn-raised"
+                            data-method="fetchAirports" data-placeholder="Ingresá Ciudad, País"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <input type="hidden" id="page-servicesFlightsMultiple-departure-data" />
+                        <img src="../../img/departure.svg" data-size="32" />
+                        <label for="page-servicesFlightsMultiple-departure">Salida</label>
+                        <a id="page-servicesFlightsMultiple-departure" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="calendar" data-inline="true" data-iconpos="right" data-mini="true"
+                            >Seleccionar</a>
+                    </div>
+                    <button id="page-servicesFlightsMultiple-submit"
+                            class="ui-btn-margin-max ui-btn-raised clr-primary zmdi-icon ui-corner-all">
+                        <i class="zmdi zmdi-check"></i>
+                        Aplicar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

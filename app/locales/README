@@ -1,0 +1,2 @@
+Files in the "android" and "ios" directory will be copied to the "res" directory, with the same hierarchy.
+See: https://github.com/phonegap/build/issues/401#issuecomment-156277041

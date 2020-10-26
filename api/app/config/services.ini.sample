@@ -1,0 +1,25 @@
+; Configuración del servicio.
+;
+; [mprocer]: Nombre del servicio.
+;
+; title: Título del servicio.
+; sys[locale]: Soporte de lenguaje interno de PHP a usar para el servicio.
+; sys[timezone]: Huso horario de PHP.
+; sys[defaultWeather]: Ubicación por default para el clima.
+;
+; apiSource: Indica el data source a utilizar [imaat, consultar]
+; consultar[key]: Key del servicio
+; consultar[url]: URL del servicio
+
+; ---
+
+[secontur]
+
+title = "Secontur"
+sys[locale] = "es_AR.UTF-8"
+sys[timezone] = "America/Argentina/Buenos_Aires"
+sys[defaultWeather] = "Argentina/Buenos_Aires"
+
+apiSource = 'consultar'
+consultar[key] = 'consultar'
+consultar[url] = 'http://beta.wemkteyou.com.ar/mkte_air/json/'

@@ -1,0 +1,47 @@
+; Archivo de configuración de sistema.
+;
+; [framework]: Configuraciones específicas del framework.
+;
+; status: Status actual de la aplicación (online|offline)
+; mode: Modo de trabajo de la aplicación: "development", "production".
+;
+; [firewall]: Protección de ataques
+;
+; floodCount: Cantidad de peticiones máximas * floodTime para considerarse ataque.
+; floodTime: Tiempo (en segs) que dura el caché de peticiones.
+; banTime: Tiempo (en segs) que dura un cliente considerado atacante.
+; blacklist: IPs / IDs de dispositivos de clientes prohibidos, separadas por comas.
+; whitelist: IPs / IDs de dispositivos de clientes excluídos de la comprobación, separadas por comas.
+;
+; [emails]: Configuración del sistema de mailing
+;
+; whitelistDomains: Dominios de mailers que son aceptados como válidos (el resto será escaneado en busca del registro MX correspondiente). Separador de lista: "|".
+; exclude: Emails que contengan estas palabras serán excluídos. Separador de lista: "|".
+; blacklist: Emails que serán excluídos. Separador de lista: "|".
+; contact[<campo>]: Datos para el formulario de contacto.
+
+; ---
+
+[framework]
+
+status = "online"
+mode = "development"
+
+[firewall]
+
+floodCount = 10
+floodTime = 5
+banTime = 60 
+blacklist = ""
+whitelist = "127.0.0.1"
+
+[emails]
+
+whitelistDomains = "gmail.com|googlemail.com|hotmail.com|outlook.com|live.com|msn.com|yahoo.com|yahoo.com.ar|gmx.com|mail.com|aol.com|me.com"
+exclude = ""
+blacklist = ""
+
+contact[fromName] = "iMaat"
+contact[fromEmail] = "soporte@imaat.com.ar"
+contact[toEmail] = "luciano.fantuzzi@imaat.com.ar"
+contact[subject] = "Nuevo Contacto [imaat.com.ar]"

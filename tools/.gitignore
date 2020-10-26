@@ -1,0 +1,12 @@
+.*.swp
+.swp
+*.bak
+*~
+*.log
+.DS_Store
+/Session.vim
+/config.json
+/vendor/*
+/profiles/*/downloads/*
+!README
+!.gitkeep

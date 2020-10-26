@@ -1,0 +1,25 @@
+; Archivo de configuración de sistema.
+;
+; [framework]: Configuraciones específicas del framework.
+;
+; status: Status actual de la aplicación (online|offline)
+; site[status]: Status actual del sitio (online|offline)
+; mode: Modo de trabajo de la aplicación: "development", "production".
+;
+; [sys]: Configuración global del sistema
+;
+; emails: Contiene la configuración de campos predeterminados para el envío de correos.
+; emails[name]: (string) Nombre predeterminado del Sender.
+; emails[email]: (string) Casilla de correo predeterminada del Sender.
+
+; ---
+
+[framework]
+
+status = "online"
+mode = "development"
+
+[sys]
+
+emails[name] = "iMaat"
+emails[email] = "info@imaat.com.ar"

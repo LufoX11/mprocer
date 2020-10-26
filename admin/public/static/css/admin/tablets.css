@@ -1,0 +1,23 @@
+div[data-role="content"] ul li.li-normal {
+    min-height: 82px;
+}
+div[data-role="content"] ul li.li-small {
+    min-height: 65px;
+}
+.ui-navbar li .ui-btn .ui-btn-inner, .ui-navbar .ui-navbar-toggle .ui-btn-inner {
+    padding-top: .70em;
+    padding-bottom: .65em;
+}
+.applet-sharer .ui-btn .ui-btn-inner {
+    padding-top: 40px !important;
+}
+.applet-sharer .ui-btn .ui-icon {
+    min-width: 30px !important;
+    min-height: 30px !important;
+    margin-left: -15px !important;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+}

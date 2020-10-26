@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        version="1.10.0103"
+        versionName="1.10.0103"
+        versionCode="1429"
+        id="com.imaat.mprocer.secontur">
+
+    <!-- Essential -->
+    <name>Secontur LCC</name>
+    <description>Secontur Lufthansa City Center</description>
+    <author href="http://www.imaat.com.ar" email="soporte@imaat.com.ar">iMaat</author>
+
+    <!-- Icons -->
+    <icon src="icon.png" />
+    <platform name="android">
+        <icon src="res/icon/android/icon-36-ldpi.png"       qualifier="ldpi" />
+        <icon src="res/icon/android/icon-48-mdpi.png"       qualifier="mdpi" />
+        <icon src="res/icon/android/icon-72-hdpi.png"       qualifier="hdpi" />
+        <icon src="res/icon/android/icon-96-xhdpi.png"      qualifier="xhdpi" />
+        <icon src="res/icon/android/icon-144-xxhdpi.png"    qualifier="xxhdpi" />
+        <icon src="res/icon/android/icon-192-xxxhdpi.png"   qualifier="xxxhdpi" />
+    </platform>
+    <platform name="ios">
+        <icon src="res/icon/ios/icon-57.png"    width="57"  height="57" />
+        <icon src="res/icon/ios/icon-60.png"    width="60"  height="60" />
+        <icon src="res/icon/ios/icon-72.png"    width="72"  height="72" />
+        <icon src="res/icon/ios/icon-76.png"    width="76"  height="76" />
+        <icon src="res/icon/ios/icon-57-2x.png" width="114" height="114" />
+        <icon src="res/icon/ios/icon-60-2x.png" width="120" height="120" />
+        <icon src="res/icon/ios/icon-72-2x.png" width="144" height="144" />
+        <icon src="res/icon/ios/icon-76-2x.png" width="152" height="152" />
+    </platform>
+
+    <!-- Splashscreen -->
+    <splash src="splash.png" />
+    <platform name="android">
+        <splash src="res/screen/android/screen-ldpi-portrait.png"       qualifier="port-ldpi" />
+        <splash src="res/screen/android/screen-mdpi-portrait.png"       qualifier="port-mdpi" />
+        <splash src="res/screen/android/screen-hdpi-portrait.png"       qualifier="port-hdpi" />
+        <splash src="res/screen/android/screen-xhdpi-portrait.png"      qualifier="port-xhdpi" />
+        <splash src="res/screen/android/screen-xxhdpi-portrait.png"     qualifier="port-xxhdpi" />
+        <splash src="res/screen/android/screen-xxxhdpi-portrait.png"    qualifier="port-xxxhdpi" />
+        <splash src="res/screen/android/screen-ldpi-landscape.png"      qualifier="land-ldpi" />
+        <splash src="res/screen/android/screen-mdpi-landscape.png"      qualifier="land-mdpi" />
+        <splash src="res/screen/android/screen-hdpi-landscape.png"      qualifier="land-hdpi" />
+        <splash src="res/screen/android/screen-xhdpi-landscape.png"     qualifier="land-xhdpi" />
+        <splash src="res/screen/android/screen-xxhdpi-landscape.png"    qualifier="land-xxhdpi" />
+        <splash src="res/screen/android/screen-xxxhdpi-landscape.png"   qualifier="land-xxxhdpi" />
+    </platform>
+    <platform name="ios">
+        <splash src="res/screen/ios/screen-iphone-portrait.png"             width="320"  height="480" />
+        <splash src="res/screen/ios/screen-iphone-portrait-2x.png"          width="640"  height="960" />
+        <splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png"     width="640"  height="1136" />
+        <splash src="res/screen/ios/screen-iphone-portrait-667h-2x.png"     width="750"  height="1334" />
+        <splash src="res/screen/ios/screen-iphone-portrait-736h-3x.png"     width="1242" height="2208" />
+        <splash src="res/screen/ios/screen-iphone-landscape-736h-3x.png"    width="2208" height="1242" />
+        <splash src="res/screen/ios/screen-ipad-portrait.png"               width="768" height="1024" />
+        <splash src="res/screen/ios/screen-ipad-landscape.png"              width="1024" height="768" />
+        <splash src="res/screen/ios/screen-ipad-portrait-2x.png"            width="1536" height="2048" />
+        <splash src="res/screen/ios/screen-ipad-landscape-2x.png"           width="2048" height="1536" />
+    </platform>
+
+    <!-- Multi-Platform -->
+    <preference name="phonegap-version"         value="cli-6.5.0" />
+    <preference name="fullscreen"               value="false" />
+    <preference name="DisallowOverscroll"       value="true" />
+    <preference name="AutoHideSplashScreen"     value="true" />
+    <preference name="SplashScreenDelay"        value="3000" />
+    <preference name="FadeSplashScreen"         value="false"/>
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+
+    <!-- iOS -->
+    <preference name="ShowSplashScreenSpinner"      value="false"/>
+    <preference name="webviewbounce"                value="false" />
+    <gap:config-file platform="ios" parent="UIStatusBarHidden"> <!-- Hidden at startup -->
+        <true/>
+    </gap:config-file>
+    <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance"> <!-- Manual styling -->
+        <false/>
+    </gap:config-file>
+
+    <!-- Android -->
+    <preference name="android-minSdkVersion"    value="14" />
+    <preference name="android-targetSdkVersion" value="21" />
+    <preference name="android-installLocation"  value="preferExternal" />
+    <preference name="android-build-tool"       value="gradle" />
+
+    <!-- Core Plugins -->
+    <plugin name="cordova-plugin-device"                version="1.1.4"     source="npm" />
+    <plugin name="cordova-plugin-network-information"   version="1.3.1"     source="npm" />
+    <plugin name="cordova-plugin-geolocation"           version="2.4.1"     source="npm" />
+    <plugin name="cordova-plugin-inappbrowser"          version="1.6.1"     source="npm" />
+    <plugin name="cordova-plugin-splashscreen"          version="4.0.1"     source="npm" />
+    <plugin name="cordova-plugin-whitelist"             version="1.3.1"     source="npm" />
+    <plugin name="cordova-plugin-statusbar"             version="2.2.1"     source="npm" />
+    <plugin name="cordova-plugin-x-toast"               version="2.5.2"     source="npm" />
+    <plugin name="cordova-plugin-x-socialsharing"       version="5.1.6"     source="npm" />
+    <plugin name="phonegap-plugin-push"                 version="1.9.2"     source="npm">
+
+        <!-- Will be overriden in Push init script. This explicit way is a requirement for builder -->
+        <param name="SENDER_ID" value="123456"/>
+
+    </plugin>
+
+    <!-- Permissions -->
+    <preference name="permissions" value="none" />
+
+    <!-- Compile only for the following platforms -->
+    <platform name="android" />
+    <platform name="ios" />
+
+</widget>

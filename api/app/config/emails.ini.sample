@@ -1,0 +1,16 @@
+; Configuración de emails del sistema.
+;
+; [service]: Nombre del servicio para el que aplicará la configuración.
+;
+; booking: Emails que se envían al realizarse una nueva reserva.
+; booking[fromName]: Nombre del Sender.
+; booking[fromEmail]: Email del Sender.
+; booking[toEmail]: Email(s) del Receiver. Pueden añadirse más de una mediante el separador de listas "|".
+
+; ---
+
+[secontur]
+
+booking[fromName] = "Secontur"
+booking[fromEmail] = "system@vodka"
+booking[toEmail] = "luciano.fantuzzi@gmail.com"

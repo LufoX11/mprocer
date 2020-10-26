@@ -1,0 +1,34 @@
+; Rutas de archivos.
+;
+; --- Rutas web
+;
+; [web]
+;
+; site[default]: Ruta default del dominio.
+; static[js]: Ruta hacia los archivos de Javascript.
+; static[css]: Ruta hacia los archivos de CSS.
+; static[img]: Ruta hacia los archivos de imágen.
+; static[movies]: Ruta hacia los archivos de películas.
+; static[files]: Ruta hacia archivos para descarga.
+;
+; [fs] (Rutas absolutas del sistema de archivos)
+;
+; root: Ruta hacia imaat.com.ar
+; mprocer: Ruta hacia mprocer.com
+
+; ---
+
+[web]
+
+site[default] = "http://www.imaat.com.ar"
+
+static[js] = "http://static.imaat.com.ar/js"
+static[css] = "http://static.imaat.com.ar/css"
+static[img] = "http://static.imaat.com.ar/img"
+static[movies] = "http://static.imaat.com.ar/movies"
+static[files] = "http://static.imaat.com.ar/files"
+
+[fs]
+
+root = "/var/www/imaat.com.ar/current"
+mprocer = "/var/www/mprocer.com/current"

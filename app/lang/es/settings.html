@@ -1,0 +1,58 @@
+<html>
+<head></head>
+<body>
+    <div data-role="page" data-theme="a" id="page-settings">
+
+        <!-- CONTENT -->
+        <div data-role="content">
+
+            <!-- First time message -->
+            <div id="page-settingsWelcomeMsg"></div> 
+
+            <ul data-role="listview" id="page-settingsLanguageSelector" data-inset="true">
+                <li data-role="list-divider">Seleccioná tu idioma</li>
+                <li>
+                    <a href="#" data-lang="es" class="lang">
+                        <img src="../../img/countries/ar.svg" class="ui-li-icon">
+                        Español
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-lang="en" class="lang">
+                        <img src="../../img/countries/us.svg" class="ui-li-icon">
+                        English
+                    </a>
+                </li>
+                <li data-role="list-divider">Nosotros</li>
+                <li><a id="more-whereWeAre" href="#">
+                    <img src="../../img/gps.svg" />
+                    <h3>¿Dónde estamos?</h3>
+                    <p>Visitá el mapa con nuestra ubicación.</p>
+                </a></li>
+                <li><a id="more-contact" href="complaints.html">
+                    <img src="../../img/contact.svg" />
+                    <h3>Contacto</h3>
+                    <p>Consultas, Quejas y Sugerencias.</p>
+                </a></li>
+                <li><a href="legal.html">
+                    <img src="../../img/legal.svg" />
+                    <h3>Política de confianza</h3>
+                    <p>Aviso legal y Políticas de Confidencialidad.</p>
+                </a></li>
+            </ul>
+            <a href="log.html" class="ui-btn ui-btn-raised ui-corner-all ui-btn-margin devtools zmdi-icon">
+                <i class="zmdi zmdi-code"></i>
+                Log interno de la aplicación
+            </a>
+        </div>
+
+        <!-- Popup: WhereWeAre -->
+        <div data-role="popup" id="popup-more-whereWeAre" data-overlay-theme="a" data-theme="a"
+                data-corners="false" data-tolerance="15,15" class="popup-gmap ui-alt-icon">
+            <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete"
+                    data-iconpos="notext" class="ui-btn-right ui-btn-raised">Cerrar</a>
+            <iframe src="map-whereWeAre.html" width="480" height="320" seamless></iframe>
+        </div>
+    </div>
+</body>
+</html>

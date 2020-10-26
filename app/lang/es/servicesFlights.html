@@ -1,0 +1,141 @@
+<html>
+<head></head>
+<body>
+    <div data-role="page" data-theme="a" id="page-servicesFlights">
+
+        <!-- CONTENT -->
+        <div data-role="content">
+            <div id="page-servicesFlights-container" data-role="collapsible-set" data-inset="true"
+                    class="ui-hide-label scroller-wrapper-container" data-theme="a" data-content-theme="a">
+
+                <!-- Round -->
+                <div data-role="collapsible" class="container roundtrip" data-panel="roundtrip">
+                    <h3>Ida y Vuelta</h3>
+                    <div class="scroller-wrapper">
+                        <input type="hidden" id="page-servicesFlights-roundtrip-from-data" />
+                        <img src="../../img/travel-from.svg" data-size="32" />
+                        <label for="page-servicesFlights-roundtrip-from">Orígen</label>
+                        <a id="page-servicesFlights-roundtrip-from" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true"
+                            data-method="fetchAirports" data-placeholder="Ingresá Ciudad, País"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <input type="hidden" id="page-servicesFlights-roundtrip-to-data" />
+                        <img src="../../img/travel-to.svg" data-size="32" />
+                        <label for="page-servicesFlights-roundtrip-to">Destino</label>
+                        <a id="page-servicesFlights-roundtrip-to" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true"
+                            data-method="fetchAirports" data-placeholder="Ingresá Ciudad, País"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <input type="hidden" id="page-servicesFlights-roundtrip-departure-data" />
+                        <img src="../../img/departure.svg" data-size="32" />
+                        <label for="page-servicesFlights-roundtrip-departure">Salida</label>
+                        <a id="page-servicesFlights-roundtrip-departure" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="calendar" data-inline="true" data-iconpos="right" data-mini="true"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <input type="hidden" id="page-servicesFlights-roundtrip-return-data" />
+                        <img src="../../img/return.svg" data-size="32" />
+                        <label for="page-servicesFlights-roundtrip-return">Regreso</label>
+                        <a id="page-servicesFlights-roundtrip-return" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="calendar" data-inline="true" data-iconpos="right" data-mini="true"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <img src="../../img/man.svg" data-size="32" />
+                        <label for="page-servicesFlights-roundtrip-adults">Adultos</label>
+                        <a id="page-servicesFlights-roundtrip-adults" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <img src="../../img/kid.svg" data-size="32" />
+                        <label for="page-servicesFlights-roundtrip-kids">Menores</label>
+                        <a id="page-servicesFlights-roundtrip-kids" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true"
+                            >Seleccionar</a>
+                    </div>
+                    <div id="page-servicesFlights-roundtrip-kids-options" class="options"></div>
+                    <a href="#" data-role="button" id="page-servicesFlights-roundtrip-submit"
+                        class="ui-btn-raised clr-primary zmdi-icon"><i class="zmdi zmdi-search"></i>Buscar Vuelos</a>
+                </div>
+
+                <!-- Single -->
+                <div data-role="collapsible" class="container oneway" data-panel="oneway">
+                    <h3>Ida</h3>
+                    <div class="scroller-wrapper">
+                        <input type="hidden" id="page-servicesFlights-oneway-from-data" />
+                        <img src="../../img/travel-from.svg" data-size="32" />
+                        <label for="page-servicesFlights-oneway-from">Orígen</label>
+                        <a id="page-servicesFlights-oneway-from" href="#" data-role="button"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true" class="ui-btn-raised"
+                            data-method="fetchAirports" data-placeholder="Ingresá Ciudad, País"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <input type="hidden" id="page-servicesFlights-oneway-to-data" />
+                        <img src="../../img/travel-to.svg" data-size="32" />
+                        <label for="page-servicesFlights-oneway-to">Destino</label>
+                        <a id="page-servicesFlights-oneway-to" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true"
+                            data-method="fetchAirports" data-placeholder="Ingresá Ciudad, País"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <input type="hidden" id="page-servicesFlights-oneway-departure-data" />
+                        <img src="../../img/departure.svg" data-size="32" />
+                        <label for="page-servicesFlights-oneway-departure">Salida</label>
+                        <a id="page-servicesFlights-oneway-departure" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="calendar" data-inline="true" data-iconpos="right" data-mini="true"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <img src="../../img/man.svg" data-size="32" />
+                        <label for="page-servicesFlights-oneway-adults">Adultos</label>
+                        <a id="page-servicesFlights-oneway-adults" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <img src="../../img/kid.svg" data-size="32" />
+                        <label for="page-servicesFlights-oneway-kids">Menores</label>
+                        <a id="page-servicesFlights-oneway-kids" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true"
+                            >Seleccionar</a>
+                    </div>
+                    <div id="page-servicesFlights-oneway-kids-options" class="options"></div>
+                    <a href="#" data-role="button" id="page-servicesFlights-oneway-submit"
+                        class="ui-btn-raised clr-primary zmdi-icon"><i class="zmdi zmdi-search"></i>Buscar Vuelos</a>
+                </div>
+
+                <!-- Multiple -->
+                <div data-role="collapsible" class="container multiple" data-panel="multiple">
+                    <h3>Múltiple</h3>
+                    <div id="page-servicesFlights-multiple-segments"></div>
+                    <div class="scroller-wrapper">
+                        <img src="../../img/man.svg" data-size="32" />
+                        <label for="page-servicesFlights-multiple-adults">Adultos</label>
+                        <a id="page-servicesFlights-multiple-adults" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true"
+                            >Seleccionar</a>
+                    </div>
+                    <div class="scroller-wrapper">
+                        <img src="../../img/kid.svg" data-size="32" />
+                        <label for="page-servicesFlights-multiple-kids">Menores</label>
+                        <a id="page-servicesFlights-multiple-kids" href="#" data-role="button" class="ui-btn-raised"
+                            data-icon="arrow-r" data-inline="true" data-iconpos="right" data-mini="true"
+                            >Seleccionar</a>
+                    </div>
+                    <div id="page-servicesFlights-multiple-kids-options" class="options"></div>
+                    <a href="#" data-role="button" id="page-servicesFlights-multiple-submit"
+                        class="ui-btn-raised clr-primary zmdi-icon"><i class="zmdi zmdi-search"></i>Buscar Vuelos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

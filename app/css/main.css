@@ -1,0 +1,1634 @@
+/* ------------------------------------------------------------------------- */
+/* IMPORT SASS BASE */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* This file contains all custom vars and functions used by SASS. */
+/* ------------------------------------------------------------------------- */
+/* ----------------------- Custom by User (Material Design Palette by materialpalette.com) ----------------------- */
+/* ----------------------- Global ----------------------- */
+/* ----------------------- Functions ----------------------- */
+/* ------------------------------------------------------------------------- */
+/* FONTS */
+/* ------------------------------------------------------------------------- */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto-Regular"), url("../font/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Roboto-Italic"), url("../font/Roboto-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto-Medium"), url("../font/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Roboto-Medium-Italic"), url("../font/Roboto-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto-Bold"), url("../font/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Roboto-Bold-Italic"), url("../font/Roboto-BoldItalic.ttf") format("truetype");
+}
+/* ------------------------------------------------------------------------- */
+/* CUSTOMS AND GLOBALS */
+/* ------------------------------------------------------------------------- */
+/* ----------------------- HTML elements ----------------------- */
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -moz-touch-callout: none;
+  -ms-touch-callout: none;
+  touch-callout: none;
+  -ms-touch-select: none;
+  -ms-touch-action: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+}
+
+body {
+  text-shadow: none !important;
+}
+
+input:not(.mbsc-control),
+textarea {
+  -webkit-user-select: auto !important;
+  -khtml-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  -o-user-select: auto !important;
+  user-select: auto !important;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: auto !important;
+  -moz-touch-callout: auto !important;
+  -ms-touch-callout: auto !important;
+  touch-callout: auto !important;
+  -ms-touch-select: auto !important;
+  -ms-touch-action: auto !important;
+}
+
+input.mbsc-control {
+  pointer-events: none;
+}
+
+div[data-role="content"] ul li.li-normal {
+  min-height: 82px;
+}
+
+div[data-role="content"] ul li.li-small {
+  min-height: 65px;
+}
+
+table.for-alert {
+  width: 100%;
+  margin-bottom: .45em;
+}
+table.for-alert th {
+  text-align: right;
+  min-width: 111px;
+  width: 50%;
+}
+
+:focus {
+  outline: 0;
+}
+
+/* ----------------------- Typography ----------------------- */
+h1 {
+  font-size: 3.5em;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+h2, .ui-content .content-text h2 {
+  font-size: 2.125em;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+h3, .ui-content .content-text h3 {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+h4, .ui-content .content-text h4 {
+  font-size: 1.375em;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+h5, .ui-content .content-text h5 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: .875em;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+p, .ui-content .content-text p {
+  font-size: 1em;
+  line-height: 1.2em;
+  word-wrap: break-word;
+}
+
+/* ----------------------- Custom ----------------------- */
+.event {
+  font-size: 12px;
+  margin: 0 102px;
+  padding: 6px 0;
+}
+
+.event.listening {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.no-title thead {
+  display: none;
+}
+
+.ui-loader .brands {
+  background: transparent url(../img/airlines-logo.svg?1031) no-repeat center bottom !important;
+  height: 16px;
+  padding-top: 15px;
+  opacity: .5;
+}
+
+.devtools {
+  display: none;
+}
+
+.separator {
+  display: block;
+  border: 0;
+  padding: 0;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.grayscale {
+  filter: grayscale(1);
+  /* Firefox */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-270 {
+  transform: rotate(270deg);
+}
+
+.rotateY-90 {
+  transform: rotateY(90deg);
+}
+
+.rotateY-180 {
+  transform: rotateY(180deg);
+}
+
+.rotateY-270 {
+  transform: rotateY(270deg);
+}
+
+.rotateX-90 {
+  transform: rotateX(90deg);
+}
+
+.rotateX-180 {
+  transform: rotateX(180deg);
+}
+
+.rotateX-270 {
+  transform: rotateX(270deg);
+}
+
+/* ----------------------- Header Toolbar ----------------------- */
+.main-header {
+  z-index: 2;
+}
+.main-header .ui-btn, .main-header .ui-page-theme-a .ui-btn.ui-btn-active, .ui-page-theme-a .main-header .ui-btn.ui-btn-active {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  border: none;
+  border-radius: 100%;
+  font-size: 1em;
+  text-shadow: none !important;
+}
+.main-header .ui-btn.home,
+.main-header .ui-btn.alerts {
+  font-size: 1.2em;
+  height: 24px;
+  width: 24px;
+  padding: 6px;
+  margin: 2px 0 0;
+}
+.main-header .ui-btn.alerts {
+  width: 30px;
+  border-radius: 3px;
+}
+.main-header .ui-btn.alerts .alerts-counter {
+  font-size: 12px;
+  vertical-align: top;
+}
+.main-header .ui-btn.home:after,
+.main-header .ui-btn.alerts:after {
+  background-size: cover;
+  height: 28px;
+  width: 28px;
+  margin-left: -14px;
+  margin-top: -14px;
+}
+.main-header .ui-btn.news {
+  margin-right: 1.5em;
+  padding: .2em .346em;
+}
+.main-header .ui-btn.settings {
+  padding: .2em .295em;
+}
+
+/* ----------------------- Main Menu ----------------------- */
+.main-menu {
+  z-index: 2;
+  height: 80px;
+}
+.main-menu .mbsc-ms-c {
+  background-color: transparent;
+  border: none;
+}
+.main-menu .mbsc-jqm .mbsc-ms-item {
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+}
+.main-menu .mbsc-jqm .mbsc-ic:before {
+  font-size: 1.8em;
+}
+
+/* ----------------------- Map Preview ----------------------- */
+.map {
+  text-align: center;
+  margin-bottom: 9px;
+}
+.map img {
+  -webkit-box-shadow: 0 1px 3px rgba(33, 33, 33, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(33, 33, 33, 0.2);
+  box-shadow: 0 1px 3px rgba(33, 33, 33, 0.2);
+  max-height: none;
+  max-width: none;
+}
+
+/* ----------------------- General Text Format ----------------------- */
+.ui-content .content-text {
+  padding: .3em;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 0;
+}
+.ui-content .content-text p,
+.ui-content .content-text h2,
+.ui-content .content-text h3,
+.ui-content .content-text h4,
+.ui-content .content-text h5 {
+  white-space: normal;
+}
+
+.ui-content .content-text.title {
+  text-align: center;
+}
+
+/* ----------------------- Scroller Layer (custom component) ----------------------- */
+.scroller-wrapper-container .scroller-wrapper {
+  display: inline-block;
+  width: 100%;
+}
+.scroller-wrapper-container .scroller-wrapper label {
+  display: inline-block;
+  padding-top: 12px;
+}
+.scroller-wrapper-container .scroller-wrapper img {
+  float: left;
+  padding: 5px 9px 5px 3px;
+}
+.scroller-wrapper-container .scroller-wrapper .ui-btn {
+  float: right;
+  margin-top: 3px;
+  max-width: 144px;
+  margin-bottom: 0;
+}
+.scroller-wrapper-container .scroller-wrapper .ui-btn img {
+  padding: 0 6px 0 0;
+  height: 14px;
+}
+.scroller-wrapper-container .scroller-wrapper .ui-btn.ui-btn-icon-notext {
+  margin-top: 6px;
+}
+.scroller-wrapper-container .scroller-wrapper .ui-select {
+  display: inline;
+}
+.scroller-wrapper-container .scroller-wrapper .info {
+  float: right;
+  width: 60%;
+  margin-top: 5px;
+}
+.scroller-wrapper-container .scroller-wrapper .info .text {
+  margin-top: 7px;
+}
+.scroller-wrapper-container .scroller-wrapper .info img {
+  width: 24px;
+  height: 24px;
+}
+
+.scroller-wrapper-container .options {
+  margin-bottom: 7px;
+}
+.scroller-wrapper-container .options .scroller-wrapper {
+  margin-bottom: 4px;
+}
+.scroller-wrapper-container .options .mbsc-jqm-select {
+  width: 240px;
+  max-width: none;
+}
+
+/* ----------------------- Image Captions ----------------------- */
+.caption {
+  display: inline-block;
+  position: relative;
+}
+.caption img {
+  display: block;
+}
+.caption p, .caption .ui-content .content-text p, .ui-content .content-text .caption p {
+  height: 18px;
+  margin: 6px !important;
+  padding: 6px;
+  pointer-events: none;
+  position: absolute;
+  text-shadow: none;
+  width: 18px;
+}
+
+.caption.top-right p {
+  top: 0;
+  right: 0;
+}
+
+.caption.img p {
+  -webkit-box-shadow: 0 1px 3px rgba(33, 33, 33, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(33, 33, 33, 0.2);
+  box-shadow: 0 1px 3px rgba(33, 33, 33, 0.2);
+}
+
+/* ----------------------- Info Bubbles ----------------------- */
+.bubble {
+  border: 0;
+  padding: .1em .5em .01em;
+  font-weight: bold;
+}
+
+.bubble.mini {
+  font-size: 12px;
+}
+
+.bubble.grid {
+  text-align: center;
+  font-size: 1.5em;
+  padding: .3em;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ICONS */
+/* ------------------------------------------------------------------------- */
+.ui-content .ui-btn .zmdi {
+  position: absolute;
+  left: .5625em;
+  top: 50%;
+  width: 1.28571429em;
+  margin-top: -9px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+.ui-content .zmdi.static {
+  position: static;
+  font-weight: normal;
+}
+.ui-content .ui-btn.icon {
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  font-size: 24px;
+}
+.ui-content .ui-btn.icon .zmdi {
+  position: static;
+  left: auto;
+  top: auto;
+  width: auto;
+  margin-top: 0;
+  font-size: inherit;
+}
+.ui-content .ui-btn.icon.rounded {
+  border-radius: 50%;
+}
+
+.ui-icon-loading {
+  background: url("../img/ajax-loader.svg?1031");
+}
+
+/* ------------------------------------------------------------------------- */
+/* COMPONENTS */
+/* ------------------------------------------------------------------------- */
+/* ----------------------- JQM ----------------------- */
+.ui-body-a,
+.ui-page-theme-a .ui-body-inherit,
+html .ui-bar-a .ui-body-inherit,
+html .ui-body-a .ui-body-inherit,
+html body .ui-group-theme-a .ui-body-inherit,
+html .ui-panel-page-container-a {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  border-width: 0;
+}
+
+.ui-page-theme-a .ui-btn:focus,
+html .ui-bar-a .ui-btn:focus,
+html .ui-body-a .ui-btn:focus,
+html body .ui-group-theme-a .ui-btn:focus,
+html head + body .ui-btn.ui-btn-a:focus,
+.ui-page-theme-a .ui-focus,
+html .ui-bar-a .ui-focus,
+html .ui-body-a .ui-focus,
+html body .ui-group-theme-a .ui-focus,
+html head + body .ui-btn-a.ui-focus,
+html head + body .ui-body-a.ui-focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.ui-input-text.ui-focus:after,
+.ui-input-search.ui-focus:after {
+  background-color: transparent;
+}
+
+.ui-page,
+.ui-collapsible-inset .ui-collapsible-content {
+  background-color: transparent;
+}
+
+.ui-field-contain,
+.ui-mobile fieldset.ui-field-contain,
+.ui-listview .ui-field-contain {
+  padding: .1em;
+  background-color: transparent;
+  border: none;
+}
+
+.ui-content {
+  background-color: transparent;
+  padding: .21em .1em .1em;
+}
+
+.ui-input-text,
+.ui-input-search {
+  background-color: transparent !important;
+}
+
+.form-enhanced textarea.ui-input-text {
+  border-bottom-width: 1px;
+}
+.form-enhanced textarea.ui-input-text.ui-focus {
+  border-bottom-width: 2px;
+}
+.form-enhanced .ui-input-text:not(.ui-input-text-select):after,
+.form-enhanced .ui-input-search:after {
+  content: "";
+  position: absolute;
+  width: 99%;
+  height: 1px;
+}
+.form-enhanced .ui-input-text.ui-focus:not(.ui-input-text-select):after,
+.form-enhanced .ui-input-search.ui-focus:after {
+  height: 2px;
+}
+.form-enhanced .ui-btn.mbsc-jqm-select,
+.form-enhanced .ui-btn.mbsc-jqm-select input {
+  text-transform: uppercase;
+  font-weight: normal !important;
+  text-align: left;
+}
+.form-enhanced .ui-btn.mbsc-jqm-select {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  border: 0;
+  background-color: transparent;
+  padding-left: 6px;
+}
+.form-enhanced .ui-btn.mbsc-jqm-select input {
+  text-align: left;
+}
+
+.ui-btn, .ui-btn.ui-btn-raised,
+.ui-btn.ui-btn-transparent,
+.ui-btn.ui-btn-clear, .ui-page-theme-a .ui-btn.ui-btn-active,
+.ui-header-fixed .ui-btn-left,
+.ui-header-fixed .ui-btn-right,
+.ui-page-theme-a .ui-btn,
+.ui-page-theme-a .ui-btn.ui-btn-active {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  text-shadow: none !important;
+  margin: 0;
+}
+
+.ui-btn.zmdi-icon, .ui-page-theme-a .zmdi-icon.ui-btn.ui-btn-active {
+  padding-left: 36px;
+}
+
+.ui-btn.ui-btn-raised, .ui-page-theme-a .ui-btn-raised.ui-btn.ui-btn-active,
+.ui-btn.ui-btn-transparent,
+.ui-page-theme-a .ui-btn-transparent.ui-btn.ui-btn-active,
+.ui-btn.ui-btn-clear,
+.ui-page-theme-a .ui-btn-clear.ui-btn.ui-btn-active,
+.ui-btn.ui-btn-raised input,
+.ui-page-theme-a .ui-btn-raised.ui-btn.ui-btn-active input,
+.ui-btn.ui-btn-transparent input,
+.ui-page-theme-a .ui-btn-transparent.ui-btn.ui-btn-active input,
+.ui-btn.ui-btn-clear input,
+.ui-page-theme-a .ui-btn-clear.ui-btn.ui-btn-active input {
+  text-transform: uppercase;
+  font-weight: normal !important;
+}
+
+.ui-btn.ui-btn-raised, .ui-page-theme-a .ui-btn-raised.ui-btn.ui-btn-active,
+.ui-btn.ui-btn-transparent,
+.ui-page-theme-a .ui-btn-transparent.ui-btn.ui-btn-active,
+.ui-btn.ui-btn-clear,
+.ui-page-theme-a .ui-btn-clear.ui-btn.ui-btn-active {
+  border: 0;
+}
+
+.ui-btn.ui-btn-raised, .ui-page-theme-a .ui-btn-raised.ui-btn.ui-btn-active {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(33, 33, 33, 0.26) !important;
+  -moz-box-shadow: 0 2px 5px 0 rgba(33, 33, 33, 0.26) !important;
+  box-shadow: 0 2px 5px 0 rgba(33, 33, 33, 0.26) !important;
+}
+
+.ui-btn.ui-btn-transparent, .ui-page-theme-a .ui-btn-transparent.ui-btn.ui-btn-active,
+.ui-btn.ui-btn-clear,
+.ui-page-theme-a .ui-btn-clear.ui-btn.ui-btn-active {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-transparent {
+  background-color: transparent;
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-raised.clr-primary {
+  font-weight: bold !important;
+}
+
+.ui-header .ui-btn-icon-left .ui-btn-inner,
+.ui-mini.ui-btn-icon-left .ui-btn-inner,
+.ui-mini .ui-btn-icon-left .ui-btn-inner {
+  padding-left: 27px;
+}
+
+.ui-btn-margin {
+  margin-top: .1em !important;
+  margin-bottom: .1em !important;
+}
+
+.ui-btn-margin-max {
+  margin-top: .3em !important;
+  margin-bottom: .3em !important;
+}
+
+.ui-page-theme-a .ui-header,
+.main-header {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(33, 33, 33, 0.14), 0 3px 1px -2px rgba(33, 33, 33, 0.2), 0 1px 5px 0 rgba(33, 33, 33, 0.12) !important;
+  -moz-box-shadow: 0 2px 2px 0 rgba(33, 33, 33, 0.14), 0 3px 1px -2px rgba(33, 33, 33, 0.2), 0 1px 5px 0 rgba(33, 33, 33, 0.12) !important;
+  box-shadow: 0 2px 2px 0 rgba(33, 33, 33, 0.14), 0 3px 1px -2px rgba(33, 33, 33, 0.2), 0 1px 5px 0 rgba(33, 33, 33, 0.12) !important;
+  border: 0px solid transparent;
+}
+
+.ui-header,
+.ui-header-fixed,
+.main-header {
+  text-shadow: none !important;
+  font-size: 20px;
+  text-transform: uppercase;
+  top: 0;
+  padding-top: 0;
+}
+.ui-header .ui-btn, .ui-header .ui-page-theme-a .ui-btn.ui-btn-active, .ui-page-theme-a .ui-header .ui-btn.ui-btn-active,
+.ui-header-fixed .ui-btn,
+.ui-header-fixed .ui-page-theme-a .ui-btn.ui-btn-active,
+.ui-page-theme-a .ui-header-fixed .ui-btn.ui-btn-active,
+.main-header .ui-btn,
+.main-header .ui-page-theme-a .ui-btn.ui-btn-active,
+.ui-page-theme-a .main-header .ui-btn.ui-btn-active {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.ui-header .ui-navbar li:last-child .ui-btn,
+.ui-header-fixed .ui-navbar li:last-child .ui-btn,
+.main-header .ui-navbar li:last-child .ui-btn {
+  width: 100%;
+}
+.ui-header .ui-title,
+.ui-header-fixed .ui-title,
+.main-header .ui-title {
+  letter-spacing: 0.03em;
+  font-weight: normal !important;
+  margin: 0 57px;
+  text-align: left;
+}
+
+.ui-popup-screen,
+.ui-popup-screen.in {
+  opacity: 1;
+}
+
+.ui-popup-screen {
+  bottom: 0;
+}
+
+.ui-collapsible {
+  margin: 0;
+}
+
+.ui-collapsible-set {
+  margin: 0;
+}
+.ui-collapsible-set .container .ui-collapsible-content {
+  padding: 3px 5px;
+}
+
+.ui-collapsible-content {
+  padding: 0;
+}
+
+.ui-icon-shadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.ui-content .ui-listview,
+.ui-panel-inner .ui-listview,
+.ui-content .ui-listview-inset {
+  margin: 0;
+}
+
+.ui-li-static .ui-btn a.ui-btn,
+.ui-li-desc,
+.ui-li-heading,
+.ui-listview .ui-li-static,
+.ui-listview .ui-li-static a.ui-btn {
+  white-space: normal;
+}
+
+.ui-listview .ui-li-static a.ui-btn .icon img {
+  width: 16px;
+  height: 16px;
+  vertical-align: bottom;
+  padding-right: 6px;
+}
+.ui-listview .ui-li-static .ui-btn span.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.ui-listview .ui-li-static .ui-btn span.icon img.airline {
+  margin-left: 6px;
+}
+.ui-listview .ui-li-static a.ui-btn.ui-mini {
+  margin: .446em !important;
+}
+.ui-listview .ui-li-has-thumb .ui-btn,
+.ui-listview .ui-li-static.ui-li-has-thumb {
+  min-height: 3.6em;
+  padding-left: 4.2em;
+}
+.ui-listview .ui-li-has-thumb .ui-btn img,
+.ui-listview .ui-li-static.ui-li-has-thumb img {
+  padding-top: 18px;
+  padding-left: 9px;
+  width: 48px !important;
+}
+
+.ui-flipswitch.ui-corner-all {
+  border-radius: 13px;
+}
+
+.ui-flipswitch {
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -ms-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+  border-width: 0;
+  overflow: hidden;
+}
+.ui-flipswitch .ui-btn.ui-flipswitch-on {
+  border-radius: 50%;
+  border-color: transparent;
+}
+
+.ui-icon-loading {
+  background-size: 2.875em 2.875em;
+}
+
+.ui-loader-default {
+  opacity: 1;
+}
+
+.ui-loader-verbose {
+  border-radius: 3px;
+}
+.ui-loader-verbose .ui-icon-loading {
+  opacity: .18;
+}
+
+/* ----------------------- Photoswipe ----------------------- */
+.pswp__button,
+.pswp__button--arrow--left:before,
+.pswp__button--arrow--right:before {
+  background-image: url(../img/photoswipe/default-skin.svg);
+}
+
+.pswp__zoom-wrap {
+  will-change: auto !important;
+  -webkit-backface-visibility: visible !important;
+}
+
+/* ----------------------- Scroller (Mobiscroll) ----------------------- */
+.dw-trans .dw,
+.dw-trans .dwo {
+  -webkit-animation-duration: 1000ms;
+  -moz-animation-duration: 1000ms;
+  -o-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+}
+
+.dw-trans .dw-persp,
+.dw-in .dw-slideup,
+.dw-in .dw-slidedown {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+
+.mbsc-jqm.row-size-16 .dw-li {
+  font-size: 16px;
+}
+
+.mbsc-jqm .mbsc-ic:before {
+  float: left;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.mbsc-jqm .dw-cal-todayui-body-a {
+  border-width: 0;
+}
+.mbsc-jqm .dw-cal .dw-cal-btn {
+  width: 40px;
+}
+.mbsc-jqm .dwo {
+  opacity: 1;
+}
+.mbsc-jqm .ui-header div {
+  font-size: 11px;
+  width: 50%;
+  text-align: left;
+  padding-left: 0px;
+  text-shadow: none;
+  float: left;
+}
+.mbsc-jqm .ui-header .holidays .square {
+  height: 12px;
+  width: 12px;
+  margin-right: 3px;
+}
+
+/* --- Select --- */
+.mbsc-jqm-select .ui-input-text {
+  margin: 0;
+  border: none;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+.mbsc-jqm-select .ui-input-text input {
+  padding: 0;
+  min-height: 0;
+  font-size: inherit;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* --- Select Autocomplete --- */
+.mbsc-jqm.autocomplete .dw-li {
+  text-align: center;
+}
+.mbsc-jqm.autocomplete .search-container {
+  padding: 0 .5em;
+}
+.mbsc-jqm.autocomplete .image {
+  width: 10%;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  text-align: left;
+}
+.mbsc-jqm.autocomplete .image img {
+  width: 16px;
+  height: 16px;
+}
+.mbsc-jqm.autocomplete .label {
+  width: 90%;
+  display: inline-block;
+  height: 100%;
+}
+.mbsc-jqm.autocomplete .label .title {
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 6px;
+}
+.mbsc-jqm.autocomplete .label .subtitle {
+  height: 12px;
+  line-height: 12px;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ----------------------- FlightItinerary ----------------------- */
+.ui-listview.flight-itinerary .ui-li-static table {
+  font-size: .75em;
+}
+.ui-listview.flight-itinerary .ui-li-divider {
+  font-size: .875em;
+}
+.ui-listview.flight-itinerary .ui-li-divider .icon-departure {
+  margin-right: 3px;
+}
+.ui-listview.flight-itinerary .ui-li-divider .iata {
+  float: right;
+}
+.ui-listview.flight-itinerary .ui-li-divider .iata .zmdi {
+  margin: 0 3px;
+}
+.ui-listview.flight-itinerary .ui-li-static.info {
+  min-height: 36px;
+}
+.ui-listview.flight-itinerary .ui-li-static.info span.left .row1,
+.ui-listview.flight-itinerary .ui-li-static.info span.right .row1 {
+  font-weight: bold;
+  max-width: 150px;
+}
+.ui-listview.flight-itinerary .ui-li-static.info span.left {
+  float: left;
+}
+.ui-listview.flight-itinerary .ui-li-static.info span.left .row2 {
+  font-size: .833em;
+}
+@media (min-width: 1px) and (max-width: 402px) {
+  .ui-listview.flight-itinerary .ui-li-static.info span.left .row2 {
+    max-width: 117px;
+  }
+}
+.ui-listview.flight-itinerary .ui-li-static.info span.right {
+  float: right;
+}
+.ui-listview.flight-itinerary .ui-li-static.info span.right .row1 img {
+  vertical-align: bottom;
+  margin-right: 3px;
+}
+.ui-listview.flight-itinerary .ui-li-static.info-details {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.ui-listview.flight-itinerary .ui-li-static.info-details span.datetime {
+  display: inline-block;
+  margin-left: -3px;
+  margin-right: 12px;
+}
+.ui-listview.flight-itinerary .ui-li-static.info-details span.datetime .row1 {
+  text-align: center;
+  font-weight: bold;
+}
+.ui-listview.flight-itinerary .ui-li-static.info-details span.airport-data {
+  vertical-align: top;
+  font-size: .75em;
+  font-weight: normal;
+  display: inline-block;
+  max-width: 60%;
+  margin-top: 3px;
+}
+.ui-listview.flight-itinerary .ui-li-static.delay.resume {
+  text-align: center;
+}
+.ui-listview.flight-itinerary .ui-li-static.delay {
+  font-size: .75em;
+  font-weight: normal;
+}
+.ui-listview.flight-itinerary .ui-li-static.delay .zmdi {
+  margin-right: 3px;
+}
+
+/* ----------------------- Progress bar ----------------------- */
+@-webkit-keyframes progressbar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes progressbar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-o-keyframes progressbar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes progressbar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes progressbar-inverse {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@-moz-keyframes progressbar-inverse {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@-o-keyframes progressbar-inverse {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes progressbar-inverse {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.progressbar {
+  height: 3px;
+}
+.progressbar .bar {
+  height: 3px;
+  -webkit-animation: progressbar 120s linear infinite;
+  -moz-animation: progressbar 120s linear infinite;
+  -o-animation: progressbar 120s linear infinite;
+  animation: progressbar 120s linear infinite;
+}
+
+.progressbar.loader {
+  margin-top: 15px;
+  opacity: .3;
+}
+.progressbar.loader .bar {
+  -webkit-animation: progressbar-inverse 120s infinite forwards;
+  -moz-animation: progressbar-inverse 120s infinite forwards;
+  -o-animation: progressbar-inverse 120s infinite forwards;
+  animation: progressbar-inverse 120s infinite forwards;
+}
+
+/* ----------------------- Spinner ----------------------- */
+@-webkit-keyframes spinner-rotator {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner-rotator {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner-rotator {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner-rotator {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinner-dash {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
+@-moz-keyframes spinner-dash {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
+@-o-keyframes spinner-dash {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes spinner-dash {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124;
+  }
+}
+.spinner {
+  text-align: center;
+  -moz-transform: scale(1);
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 9px;
+  zoom: 1;
+}
+.spinner svg {
+  -webkit-animation: spinner-rotator 2s linear infinite;
+  -moz-animation: spinner-rotator 2s linear infinite;
+  -o-animation: spinner-rotator 2s linear infinite;
+  animation: spinner-rotator 2s linear infinite;
+  height: 50px;
+  width: 50px;
+}
+.spinner svg .path {
+  -webkit-animation: spinner-dash 1.5s ease-in-out infinite, spinner-colors 6s ease-in-out infinite;
+  -moz-animation: spinner-dash 1.5s ease-in-out infinite, spinner-colors 6s ease-in-out infinite;
+  -o-animation: spinner-dash 1.5s ease-in-out infinite, spinner-colors 6s ease-in-out infinite;
+  animation: spinner-dash 1.5s ease-in-out infinite, spinner-colors 6s ease-in-out infinite;
+  stroke-dasharray: 1,200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+}
+
+.spinner.bg {
+  -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  display: block;
+  padding: 6px;
+}
+
+/* ----------------------- Cards ----------------------- */
+.card {
+  display: block;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin: 4px auto;
+  max-width: 450px;
+  overflow: hidden;
+}
+.card .media {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.card .media img {
+  width: 100%;
+  display: block;
+}
+.card .title {
+  padding: 24px 16px;
+}
+.card .title .primary-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+.card .title .subtitle {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+  line-height: 20px;
+  max-width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card .title.has-supporting-text {
+  padding: 24px 16px 16px 16px;
+}
+.card .supporting-text {
+  padding: 16px;
+  display: block;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+}
+.card .supporting-text.has-title {
+  padding-top: 0;
+}
+.card .supporting-text.has-action {
+  padding: 16px 16px 16px 16px;
+}
+.card .action {
+  padding: 8px;
+}
+.card .action .box .ui-btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+}
+.card .action .box .ui-btn .zmdi {
+  position: static;
+  left: auto;
+  top: auto;
+  width: auto;
+  margin-top: 0;
+  font-size: inherit;
+}
+.card .between-xs {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.card .row {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -.5rem;
+  margin-left: -.5rem;
+}
+.card .align-right {
+  text-align: right;
+}
+.card .col-xs, .card .col-xs-1, .card .col-xs-10, .card .col-xs-11, .card .col-xs-12, .card .col-xs-2, .card .col-xs-3, .card .col-xs-4, .card .col-xs-5, .card .col-xs-6,
+.card .col-xs-7, .card .col-xs-8, .card .col-xs-9, .card .col-xs-offset-1, .card .col-xs-offset-10, .card .col-xs-offset-11, .card .col-xs-offset-12,
+.card .col-xs-offset-2, .card .col-xs-offset-3, .card .col-xs-offset-4, .card .col-xs-offset-5, .card .col-xs-offset-6, .card .col-xs-offset-7,
+.card .col-xs-offset-8, .card .col-xs-offset-9 {
+  box-sizing: border-box;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+.card .col-xs-4 {
+  -webkit-flex-basis: 33.333%;
+  -ms-flex-preferred-size: 33.333%;
+  flex-basis: 33.333%;
+  max-width: 33.333%;
+}
+.card .col-xs-8 {
+  -webkit-flex-basis: 66.667%;
+  -ms-flex-preferred-size: 66.667%;
+  flex-basis: 66.667%;
+  max-width: 66.667%;
+}
+.card .col-xs-12 {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.card.first {
+  margin-top: 1px;
+}
+
+.card.last {
+  margin-bottom: 1px;
+}
+
+.card.read .primary-title,
+.card.read .ui-btn {
+  font-weight: 400 !important;
+}
+
+.card.media-right {
+  position: relative;
+}
+.card.media-right .media {
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.card.media-right .title .primary-title,
+.card.media-right .title .subtitle {
+  margin-right: 120px;
+}
+
+.card.media-right.media-small .media {
+  width: 80px;
+  height: 80px;
+}
+.card.media-right.media-small .title {
+  min-height: 56px;
+}
+
+.card.media-right.media-medium .media {
+  width: 112px;
+  height: 112px;
+}
+.card.media-right.media-medium .title {
+  min-height: 88px;
+}
+.card.media-right.media-medium .title .primary-title,
+.card.media-right.media-medium .title .subtitle {
+  margin-right: 180px;
+}
+
+.card.media-right.media-large .media {
+  width: 152px;
+  height: 152px;
+}
+.card.media-right.media-large .title {
+  min-height: 128px;
+}
+.card.media-right.media-large .title .primary-title,
+.card.media-right.media-large .title .subtitle {
+  margin-right: 220px;
+}
+
+.card.media-left {
+  position: relative;
+}
+
+/* ------------------------------------------------------------------------- */
+/* POPUPS */
+/* ------------------------------------------------------------------------- */
+.ui-popup {
+  border-radius: 3px !important;
+}
+.ui-popup .ui-content .action-btns .ui-btn {
+  text-align: right;
+}
+.ui-popup .ui-title img {
+  float: left;
+}
+.ui-popup .ui-filterable {
+  margin: 0;
+}
+.ui-popup .ui-input-search {
+  margin: 0;
+}
+.ui-popup .ui-listview {
+  margin-top: .3em !important;
+  overflow: auto;
+}
+.ui-popup .ui-listview .ui-li-icon {
+  font-size: 16px;
+  top: .55em !important;
+}
+
+/* ------------------------------------------------------------------------- */
+/* MESSAGES / CONFIRM */
+/* ------------------------------------------------------------------------- */
+#page-messages,
+#page-confirm {
+  min-width: 250px;
+}
+#page-messages .ui-content,
+#page-confirm .ui-content {
+  text-align: right;
+  padding: 12px;
+}
+#page-messages .ui-content p,
+#page-confirm .ui-content p {
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------------- */
+/* PAGE: News */
+/* ------------------------------------------------------------------------- */
+#page-newsContent-newsContainer {
+  text-align: center;
+}
+#page-newsContent-newsContainer img {
+  -webkit-box-shadow: 0 1px 3px rgba(33, 33, 33, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(33, 33, 33, 0.2);
+  box-shadow: 0 1px 3px rgba(33, 33, 33, 0.2);
+}
+
+/* ------------------------------------------------------------------------- */
+/* PAGE: Services - Airports */
+/* ------------------------------------------------------------------------- */
+#page-servicesAirports-container li.airportsInfo table th,
+#page-servicesShoppingsNames table th {
+  text-align: left;
+  min-width: 135px;
+  height: 24px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* PAGE: Services - Currencies */
+/* ------------------------------------------------------------------------- */
+#page-servicesCurrencies-container .ui-block-a, #page-servicesMetrics-container .ui-block-a {
+  width: 33%;
+  margin-left: 9px;
+}
+
+#page-servicesCurrencies-container .ui-block-b, #page-servicesMetrics-container .ui-block-b {
+  width: 63%;
+}
+
+#page-servicesCurrencies-result, #page-servicesMetrics-result {
+  font-size: 1.5em;
+  margin: 13px 0 0;
+}
+
+#page-servicesCurrencies-container .ui-select, #page-servicesMetrics-container .ui-select {
+  margin-left: 24px;
+}
+
+#page-servicesCurrencies-container .ui-select a, #page-servicesMetrics-container .ui-select a {
+  height: 34px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* PAGE: Services - Metrics */
+/* ------------------------------------------------------------------------- */
+#page-servicesMetrics-menu div.ui-radio {
+  max-width: 76px;
+}
+
+#page-servicesMetrics-menu div.ui-radio .ui-btn-inner {
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* PAGE: Services - Weather */
+/* ------------------------------------------------------------------------- */
+#page-servicesWeather-forecast-city {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* PAGE: Services - Flights - Search - Buy */
+/* ------------------------------------------------------------------------- */
+#page-servicesFlightsBuy-details .ui-btn .title,
+#page-servicesFlightsBuy-details .ui-li-static .title {
+  padding-top: .1em;
+  float: left;
+}
+#page-servicesFlightsBuy-details .total .adt .title {
+  font-weight: bold;
+}
+#page-servicesFlightsBuy-details .ui-btn .price,
+#page-servicesFlightsBuy-details .ui-li-static .price {
+  padding-top: .1em;
+  float: right;
+}
+#page-servicesFlightsBuy-details .ui-collapsible.total {
+  font-size: .75em;
+}
+#page-servicesFlightsBuy-details .ui-collapsible.formData .ui-li-static.divider {
+  font-size: .75em;
+}
+#page-servicesFlightsBuy-details .ui-collapsible.formData a.ui-btn.mbsc-jqm-select {
+  min-height: 17px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* PAGE: Services - Flights - Search - Results */
+/* ------------------------------------------------------------------------- */
+#page-servicesFlightsSearchResults-data .ui-bar {
+  height: 45px;
+  padding: 0;
+}
+#page-servicesFlightsSearchResults-data .ui-bar table {
+  font-size: .75em;
+  text-align: center;
+  width: 100%;
+}
+#page-servicesFlightsSearchResults-data .ui-bar table .row1 {
+  font-weight: bold;
+}
+#page-servicesFlightsSearchResults-data .ui-bar table .row1 .flight-to {
+  margin: 0 3px;
+}
+#page-servicesFlightsSearchResults-data .ui-bar table .row2 {
+  font-size: .833em;
+}
+
+#page-servicesFlightsSearchResults-info {
+  font-size: .625em;
+  height: 15px;
+  text-align: center;
+}
+
+#page-servicesFlightsSearchResults-list .ui-btn span.company-name {
+  float: left;
+  font-size: .75em;
+  padding: .3em .5em;
+}
+@media (min-width: 1px) and (max-width: 402px) {
+  #page-servicesFlightsSearchResults-list .ui-btn span.company-name {
+    max-width: 132px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+  }
+}
+#page-servicesFlightsSearchResults-list .ui-btn span.company-logo {
+  padding-top: .1em;
+  float: left;
+}
+#page-servicesFlightsSearchResults-list .ui-btn span.price {
+  float: right;
+}
+#page-servicesFlightsSearchResults-list .ui-listview .ui-btn {
+  padding-left: 6px;
+  border-bottom: 0;
+}
+#page-servicesFlightsSearchResults-list .ui-listview .ui-btn span {
+  vertical-align: middle;
+}
+#page-servicesFlightsSearchResults-list .ui-listview .ui-btn span .zmdi.static {
+  font-size: 1em;
+}
+#page-servicesFlightsSearchResults-list .ui-listview .ui-btn .flight-dpt {
+  margin-right: 3px;
+}
+#page-servicesFlightsSearchResults-list .ui-listview .ui-btn .flight-rtn,
+#page-servicesFlightsSearchResults-list .ui-listview .ui-btn .flight-time {
+  margin: 0 0 0 3px;
+}
+#page-servicesFlightsSearchResults-list .ui-listview .ui-btn .stops {
+  font-size: .625em;
+  font-weight: normal;
+}
+
+/* ------------------------------------------------------------------------- */
+/* PAGE: Legal */
+/* ------------------------------------------------------------------------- */
+#page-legal .newsletter {
+  text-align: center;
+}
+#page-legal .newsletter h3 {
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* PAGE: Log */
+/* ------------------------------------------------------------------------- */
+#page-log .action-btns {
+  text-align: center;
+}

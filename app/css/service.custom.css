@@ -1,0 +1,430 @@
+/* ------------------------------------------------------------------------- */
+/* IMPORT SASS BASE */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* This file contains all custom vars and functions used by SASS. */
+/* ------------------------------------------------------------------------- */
+/* ----------------------- Custom by User (Material Design Palette by materialpalette.com) ----------------------- */
+/* ----------------------- Global ----------------------- */
+/* ----------------------- Functions ----------------------- */
+/* ------------------------------------------------------------------------- */
+/* CUSTOMS AND GLOBALS */
+/* ------------------------------------------------------------------------- */
+/* ----------------------- HTML elements ----------------------- */
+::-webkit-input-placeholder {
+  color: #727272;
+}
+
+::-ms-input-placeholder {
+  color: #727272;
+}
+
+:-ms-input-placeholder {
+  color: #727272;
+}
+
+::-moz-placeholder {
+  color: #727272;
+}
+
+:-moz-placeholder {
+  color: #727272;
+}
+
+body {
+  background-color: #FFF !important;
+}
+
+/* ----------------------- Custom ----------------------- */
+#themeDarkPrimaryColor {
+  color: #F57C00;
+}
+
+#themePrimaryColor {
+  color: #FF9800;
+}
+
+#themeLightPrimaryColor {
+  color: #FFE0B2;
+}
+
+#themeTextIcons {
+  color: #FFF;
+}
+
+#themeAccentColor {
+  color: #536DFE;
+}
+
+#themePrimaryText {
+  color: #212121;
+}
+
+#themeSecondaryText {
+  color: #727272;
+}
+
+#themeDividerColor {
+  color: #DDD;
+}
+
+#themeBackgroundColor {
+  color: #FFF;
+}
+
+.ui-loader-textonly {
+  background-color: #536DFE;
+}
+
+.separator {
+  border-top: 1px solid #DDD !important;
+}
+
+.clickable {
+  color: #536DFE;
+}
+
+/* ----------------------- Header Toolbar ----------------------- */
+.main-header .ui-btn {
+  color: #FFF !important;
+}
+
+/* ----------------------- Image Captions ----------------------- */
+.caption p {
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+}
+
+.caption.img.plus p {
+  background: rgba(0, 0, 0, 0.33) url(../img/fullscreen-white.svg?1031) no-repeat center center;
+}
+
+/* ----------------------- Info Bubbles ----------------------- */
+.bubble {
+  background-color: #4CAF50;
+  color: #FFF;
+}
+
+/* ------------------------------------------------------------------------- */
+/* PAGE: Services - Flights - Search - Results */
+/* ------------------------------------------------------------------------- */
+#page-servicesFlightsSearchResults-list {
+  border-color: #DDD;
+}
+#page-servicesFlightsSearchResults-list .bubble.price {
+  background-color: #3F51B5;
+  color: #FFF;
+}
+
+/* ------------------------------------------------------------------------- */
+/* PAGE: Services - Flights - Search - Buy */
+/* ------------------------------------------------------------------------- */
+#page-servicesFlightsBuy-details .total .ui-btn {
+  background-color: #3F51B5;
+  color: #FFF;
+}
+#page-servicesFlightsBuy-details .ui-li-static.divider {
+  background-color: #607D8B;
+  color: #FFF;
+}
+#page-servicesFlightsBuy-details .ui-collapsible.total .ui-li-static .price .bubble {
+  background-color: #FFF;
+  color: #3F51B5;
+}
+
+/* ------------------------------------------------------------------------- */
+/* COMPONENTS */
+/* ------------------------------------------------------------------------- */
+/* ----------------------- JQM ----------------------- */
+.ui-page-theme-a .ui-btn.ui-btn-active,
+html .ui-bar-a .ui-btn.ui-btn-active,
+html .ui-body-a .ui-btn.ui-btn-active,
+html body .ui-group-theme-a .ui-btn.ui-btn-active,
+html head + body .ui-btn.ui-btn-a.ui-btn-active,
+.ui-page-theme-a .ui-checkbox-on:after,
+html .ui-bar-a .ui-checkbox-on:after,
+html .ui-body-a .ui-checkbox-on:after,
+html body .ui-group-theme-a .ui-checkbox-on:after,
+.ui-btn.ui-checkbox-on.ui-btn-a:after,
+.ui-page-theme-a .ui-flipswitch-active,
+html .ui-bar-a .ui-flipswitch-active,
+html .ui-body-a .ui-flipswitch-active,
+html body .ui-group-theme-a .ui-flipswitch-active,
+html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active,
+.ui-page-theme-a .ui-slider-track .ui-btn-active,
+html .ui-bar-a .ui-slider-track .ui-btn-active,
+html .ui-body-a .ui-slider-track .ui-btn-active,
+html body .ui-group-theme-a .ui-slider-track .ui-btn-active,
+html body div.ui-slider-track.ui-body-a .ui-btn-active,
+.ui-page-theme-a .ui-btn:active,
+html .ui-bar-a .ui-btn:active,
+html .ui-body-a .ui-btn:active,
+html body .ui-group-theme-a .ui-btn:active,
+html head + body .ui-btn.ui-btn-a:active,
+.ui-page-theme-a .ui-btn:hover,
+html .ui-bar-a .ui-btn:hover,
+html .ui-body-a .ui-btn:hover,
+html body .ui-group-theme-a .ui-btn:hover,
+html head + body .ui-btn.ui-btn-a:hover {
+  background-color: #FFF;
+  border-color: #DDD;
+  color: #212121;
+}
+
+.ui-btn,
+.ui-header-fixed .ui-btn-left,
+.ui-header-fixed .ui-btn-right,
+.ui-page-theme-a .ui-btn,
+.ui-page-theme-a .ui-btn.ui-btn-active {
+  background-color: #FFF;
+  color: #212121;
+  border-color: #DDD;
+}
+
+.ui-flipswitch.ui-corner-all {
+  -webkit-box-shadow: 0 0 5px rgba(33, 33, 33, 0.1);
+  -moz-box-shadow: 0 0 5px rgba(33, 33, 33, 0.1);
+  box-shadow: 0 0 5px rgba(33, 33, 33, 0.1);
+}
+
+.ui-flipswitch .ui-btn.ui-flipswitch-on {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.ui-popup-screen {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* ----------------------- Scroller (Mobiscroll) ----------------------- */
+.mbsc-jqm .dwo {
+  background: rgba(0, 0, 0, 0.6);
+}
+.mbsc-jqm .ui-header .holidays .square.fixed {
+  background-color: #FF9800;
+}
+.mbsc-jqm .ui-header .holidays .square.nofixed {
+  background-color: #FFE0B2;
+}
+.mbsc-jqm .ui-header .holidays .square.bridge {
+  background-color: #DDD;
+}
+.mbsc-jqm .ui-header .holidays .square.nowork {
+  background-color: #212121;
+}
+
+/* ----------------------- FlightItinerary ----------------------- */
+.ui-listview.flight-itinerary {
+  background-color: #FFF;
+}
+.ui-listview.flight-itinerary .ui-li-static.delay,
+.ui-listview.flight-itinerary .ui-li-static.delay.resume {
+  background-color: #009688;
+  color: #FFF;
+}
+.ui-listview.flight-itinerary .ui-li-static.info {
+  background-color: #607D8B;
+  color: #FFF;
+}
+.ui-listview.flight-itinerary .ui-li-static.info table {
+  color: #FFF;
+}
+.ui-listview.flight-itinerary .ui-li-static.bubble.total {
+  background-color: #3F51B5;
+  color: #FFF;
+}
+.ui-listview.flight-itinerary .ui-li-static .bubble.mini {
+  background-color: #4CAF50;
+  color: #FFF;
+}
+.ui-listview.flight-itinerary .ui-li-static.info-details.departure {
+  border-bottom: 1px solid #DDD;
+}
+
+/* ----------------------- Progress bar ----------------------- */
+.progressbar.loader {
+  background-color: #F44336;
+}
+.progressbar.loader .bar {
+  background-image: -webkit-linear-gradient(#4CAF50, #4CAF50);
+  background-image: -moz-linear-gradient(#4CAF50, #4CAF50);
+  background-image: -ms-linear-gradient(#4CAF50, #4CAF50);
+  background-image: -o-linear-gradient(#4CAF50, #4CAF50);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4CAF50), to(#4CAF50));
+  background-image: linear-gradient(#4CAF50, #4CAF50);
+}
+
+/* ----------------------- Spinner ----------------------- */
+@-webkit-keyframes spinner-colors {
+  100%, 0% {
+    stroke: #F44336;
+  }
+  40% {
+    stroke: #2196F3;
+  }
+  66% {
+    stroke: #4CAF50;
+  }
+  80%, 90% {
+    stroke: #FFC107;
+  }
+}
+@-moz-keyframes spinner-colors {
+  100%, 0% {
+    stroke: #F44336;
+  }
+  40% {
+    stroke: #2196F3;
+  }
+  66% {
+    stroke: #4CAF50;
+  }
+  80%, 90% {
+    stroke: #FFC107;
+  }
+}
+@-o-keyframes spinner-colors {
+  100%, 0% {
+    stroke: #F44336;
+  }
+  40% {
+    stroke: #2196F3;
+  }
+  66% {
+    stroke: #4CAF50;
+  }
+  80%, 90% {
+    stroke: #FFC107;
+  }
+}
+@keyframes spinner-colors {
+  100%, 0% {
+    stroke: #F44336;
+  }
+  40% {
+    stroke: #2196F3;
+  }
+  66% {
+    stroke: #4CAF50;
+  }
+  80%, 90% {
+    stroke: #FFC107;
+  }
+}
+.spinner.bg {
+  background-color: #FFF;
+}
+
+/* ----------------------- Cards ----------------------- */
+.card {
+  background-color: white;
+}
+.card .title .subtitle {
+  color: #727272;
+}
+
+.card.read .primary-title,
+.card.read .subtitle,
+.card.read .supporting-text,
+.card.read .ui-btn {
+  color: #727272 !important;
+}
+
+/* ------------------------------------------------------------------------- */
+/* USER CUSTOM (LEAVE AT EOF) */
+/* ------------------------------------------------------------------------- */
+.ui-page-theme-c .ui-btn.ui-btn-active,
+html .ui-bar-c .ui-btn.ui-btn-active,
+html .ui-body-c .ui-btn.ui-btn-active,
+html body .ui-group-theme-c .ui-btn.ui-btn-active,
+html head + body .ui-btn.ui-btn-c.ui-btn-active,
+.ui-page-theme-c .ui-checkbox-on:after,
+html .ui-bar-c .ui-checkbox-on:after,
+html .ui-body-c .ui-checkbox-on:after,
+html body .ui-group-theme-c .ui-checkbox-on:after,
+.ui-btn.ui-checkbox-on.ui-btn-c:after,
+.ui-page-theme-c .ui-flipswitch-active,
+html .ui-bar-c .ui-flipswitch-active,
+html .ui-body-c .ui-flipswitch-active,
+html body .ui-group-theme-c .ui-flipswitch-active,
+html body .ui-flipswitch.ui-bar-c.ui-flipswitch-active,
+.ui-page-theme-c .ui-slider-track .ui-btn-active,
+html .ui-bar-c .ui-slider-track .ui-btn-active,
+html .ui-body-c .ui-slider-track .ui-btn-active,
+html body .ui-group-theme-c .ui-slider-track .ui-btn-active,
+html body div.ui-slider-track.ui-body-c .ui-btn-active {
+  background-color: #536DFE;
+  color: #FFF;
+  border-color: #DDD;
+}
+
+.ui-page-theme-a .ui-header,
+.main-header {
+  background-color: #FF9800;
+  color: #FFF;
+}
+
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a,
+.ui-page-theme-a a:hover, html .ui-bar-a a:hover, html .ui-body-a a:hover, html body .ui-group-theme-a a:hover,
+.ui-page-theme-a a:visited, html .ui-bar-a a:visited, html .ui-body-a a:visited, html body .ui-group-theme-a a:visited {
+  color: #536DFE;
+}
+
+.ui-page-theme-a .ui-btn.clr-primary {
+  color: #536DFE;
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-raised.clr-primary {
+  background-color: #536DFE;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.ui-page-theme-a .ui-flipswitch-active,
+html .ui-bar-a .ui-flipswitch-active,
+html .ui-body-a .ui-flipswitch-active,
+html body .ui-group-theme-a .ui-flipswitch-active,
+html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active {
+  background-color: #536DFE !important;
+  color: #FFF !important;
+}
+
+.ui-page-theme-a .ui-slider-track .ui-btn-active,
+html .ui-bar-a .ui-slider-track .ui-btn-active,
+html .ui-body-a .ui-slider-track .ui-btn-active,
+html body .ui-group-theme-a .ui-slider-track .ui-btn-active,
+html body div.ui-slider-track.ui-body-a .ui-btn-active,
+.ui-slider-track .ui-btn.ui-slider-handle {
+  background-color: #536DFE !important;
+}
+
+li.ui-tabs-active > .ui-link.ui-btn.ui-tabs-anchor {
+  color: #536DFE;
+}
+
+.ui-btn.ui-radio-on:after {
+  border-color: #536DFE;
+}
+
+.ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn.ui-checkbox-on,
+.ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn.ui-radio-on {
+  background-color: #536DFE;
+  color: #FFF;
+}
+
+.form-enhanced textarea.ui-input-text {
+  border-bottom-color: #DDD;
+}
+.form-enhanced textarea.ui-input-text.ui-focus {
+  border-bottom-color: #536DFE;
+}
+.form-enhanced .ui-input-text:after,
+.form-enhanced .ui-input-search:after {
+  background-color: #DDD;
+}
+.form-enhanced .ui-input-text.ui-focus:after,
+.form-enhanced .ui-input-search.ui-focus:after {
+  background-color: #536DFE;
+}
+
+.ui-icon-check:after, html .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
+  border-color: #536DFE;
+}

@@ -1,0 +1,54 @@
+<html>
+<head></head>
+<body>
+    <div data-role="page" data-theme="a" id="page-settings">
+
+        <!-- CONTENT -->
+        <div data-role="content">
+            <ul data-role="listview" id="page-settingsLanguageSelector" data-inset="true">
+                <li data-role="list-divider">Select your language</li>
+                <li>
+                    <a href="#" data-lang="es" class="lang">
+                        <img src="../../img/countries/ar.svg" class="ui-li-icon">
+                        Español
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-lang="en" class="lang">
+                        <img src="../../img/countries/us.svg" class="ui-li-icon">
+                        English
+                    </a>
+                </li>
+                <li data-role="list-divider">About Us</li>
+                <li><a id="more-whereWeAre" href="#">
+                    <img src="../../img/gps.svg" />
+                    <h3>¿Where we are?</h3>
+                    <p>Check the map with our location.</p>
+                </a></li>
+                <li><a id="more-contact" href="complaints.html">
+                    <img src="../../img/contact.svg" />
+                    <h3>Contact</h3>
+                    <p>Enquiry, Complaints and Suggestions.</p>
+                </a></li>
+                <li><a href="legal.html">
+                    <img src="../../img/legal.svg" />
+                    <h3>Trust policy</h3>
+                    <p>Terms and Conditions and Privacy Statement.</p>
+                </a></li>
+            </ul>
+            <a href="log.html" class="ui-btn ui-btn-raised ui-corner-all ui-btn-margin devtools zmdi-icon">
+                <i class="zmdi zmdi-code"></i>
+                Application Log
+            </a>
+        </div>
+
+        <!-- Popup: WhereWeAre -->
+        <div data-role="popup" id="popup-more-whereWeAre" data-overlay-theme="a" data-theme="a"
+                data-corners="false" data-tolerance="15,15" class="popup-gmap ui-alt-icon">
+            <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete"
+                    data-iconpos="notext" class="ui-btn-right ui-btn-raised">Close</a>
+            <iframe src="map-whereWeAre.html" width="480" height="320" seamless></iframe>
+        </div>
+    </div>
+</body>
+</html>

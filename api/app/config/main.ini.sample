@@ -1,0 +1,83 @@
+; Archivo de configuración de sistema.
+;
+; [services]: Todos los servicios disponibles que reconocerá el sistema. Los servicios deberán listarse debajo siguiendo el esquema <index> = "<service_name>".
+;
+; [framework]: Configuraciones específicas del framework.
+;
+; status: Status actual de la aplicación (online|offline)
+; mode: Modo de trabajo de la aplicación: "development", "production".
+; maxNewsToShow: (integer) Máximo de noticias para mostrar en Novedades.
+; OpenexchangeratesCurrenciesApiKey: (string) Key de Openexchangerates para su API de monedas.
+;
+; [sys]: Configuración global del sistema
+;
+; emails: Contiene la configuración de campos predeterminados para el envío de correos.
+; emails[name]: (string) Nombre predeterminado del Sender.
+; emails[email]: (string) Casilla de correo predeterminada del Sender.
+; currenciesSource: (string) Nombre de la librería a utilizar (debe estar en /lib) para el cálculo de monedas internacionales. Por ahora, solo: OpenexchangeratesApi
+; weatherSource: (string) Nombre de la librería a utilizar como orígen de datos. Por ahora solo: WundergroundWeatherApi.
+;
+; [alerts]: Configuración de emails para alertas del sistema.
+;
+; tasks: Alertas para los procesos offline.
+; tasks[fromName]: Nombre del Sender.
+; tasks[fromEmail]: Email del Sender.
+; tasks[toEmail]: Casilla de correo de quien recibirá la alerta. Pueden añadirse más de una mediante el separador de listas "|".
+;
+; [firewall]: Protección de ataques
+;
+; floodCount: Cantidad de peticiones máximas * floodTime para considerarse ataque.
+; floodTime: Tiempo (en segs) que dura el caché de peticiones.
+; banTime: Tiempo (en milisegs) que dura un cliente considerado atacante.
+; blacklist: IPs de clientes prohibidos, separadas por comas.
+; whitelist: IPs de clientes excluidos de la comprobación, separadas por comas.
+;
+; [emails]: Configuración del sistema de mailing
+;
+; driver: El driver a utilizar. Opciones permitidas: "sendmail", "smtp".
+; smtp: Contiene la configuración del driver "smtp".
+; smtp[host]: Host del SMTP.
+; smtp[port]: Puerto del SMTP.
+; smtp[username]: Usuario para conectarse (si necesita autenticación).
+; smtp[password]: Contraseña del usuario para conectarse (si necesita autenticación).
+; smtp[timeout]: Tiempo de espera máximo de la conexión.
+; whitelistDomains: Dominios de mailers que son aceptados como válidos (el resto será escaneado en busca del registro MX correspondiente). Separador de lista: "|".
+; exclude: Emails que contengan estas palabras serán excluídos. Separador de lista: "|".
+; blacklist: Emails que serán excluídos. Separador de lista: "|".
+
+; ---
+
+[services]
+
+0 = "mprocer"
+
+[framework]
+
+status = "online"
+mode = "development"
+maxNewsToShow = 20
+OpenexchangeratesCurrenciesApiKey = "1ca46d24677442a58e27b7a48bc5e15f"
+wundergroundWeatherApiKey = "5e70ab06cb39a65t"
+google[api_key] = "AIzaSyCntZDhQ2QkSYUE_R0AlZcjenXsDpe0"
+google[project_number] = "1039158215"
+
+[sys]
+
+emails[name] = "M-Procer"
+emails[email] = "info@mprocer.com"
+currenciesSource = "OpenexchangeratesApi"
+weatherSource = "WundergroundWeatherApi"
+
+[firewall]
+
+floodCount = 10
+floodTime = 5
+banTime = 300
+blacklist = ""
+whitelist = "127.0.0.1"
+
+[emails]
+
+whitelistDomains = "gmail.com|googlemail.com|hotmail.com|outlook.com|live.com|msn.com|yahoo.com|yahoo.com.ar|gmx.com|mail.com|aol.com|me.com"
+exclude = ""
+blacklist = ""

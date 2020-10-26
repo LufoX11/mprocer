@@ -1,0 +1,13 @@
+.*.swp
+.swp
+*.bak
+*~
+*.log
+*.ini
+Session.vim
+src
+logs/cron/files/*
+data/reports/tasks/*
+public/static/img/services/*/*
+!README
+!.gitkeep

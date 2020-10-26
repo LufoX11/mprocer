@@ -1,0 +1,20 @@
+Measures for Chrome debugger
+============================
+
+This is what you need to know about creating screenshots from Google Chrome to publish them in App Store and Google Play. It's an equivalence between the size in Chrome and the multiplier to reach the real size. So you need to switch to "device mode" in console and select the proper device in the top list (like "Nexus 5"). Then you take the screenshot, save and modify in Gimp (or another) to reach the real size (you check the multiplier factor).
+
+Eg.: In App Store, to upload the 3,5" pictures you will need 640x960 px ones. In Chrome, you select "iPhone 4" as device (the measure in browser is 320x480) so when you are done taking the screenshot, you'll be needed to scale the size x2 (the multiplier factor) to reach the required size of 640x960.
+
+* App Store
+
+3,5": iPhone 4 (320x480 x2)
+4": iPhone 5 (320x568 x2)
+4,7": iPhone 6 (375x667 x2)
+5,5": iPhone 6 Plus (414x736 x3)
+iPad: iPad (768x1024 x2)
+iPad 12.9: iPad Pro (
+
+* Google Play
+
+Smartphone: Nexus 5
+Tablet: Nexus 6

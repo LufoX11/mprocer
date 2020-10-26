@@ -1,0 +1,72 @@
+{
+    "repository": {
+        "name": "mob-mprocer-"
+    },
+    "application": {
+        "id": "",
+        "locale": "es_AR.UTF-8",
+        "timezone": "America/Argentina/Buenos_Aires",
+        "defaultWeather": "Argentina/Buenos_Aires",
+        "api": {
+            "google": {
+                "apiKey": "AIzaSyD2GCLxJs1-3IeBlDGt6stVze4UCz3c0vA",
+                "projectNumber": "87994900436"
+            }
+        },
+        "certificates": {
+            "google": {
+                "release": {
+                    "name": "Release",
+                    "alias": "release_key",
+                    "password": "bEOGWucHYB3elVa"
+                }
+            },
+            "apple": {
+                "distribution": {
+                    "mobileprovision": "",
+                    "password": "p5Kv6GYnvW3uc4xC"
+                },
+                "push": {
+                    "passphrase": ""
+                }
+            }
+        }
+    },
+    "company": {
+        "name": "",
+        "shortName": "",
+        "corporateName": "",
+        "description": ", Empresa de Viajes y Turismo",
+        "address": "",
+        "zipCode": "",
+        "city": "",
+        "country": "Argentina",
+        "phone": "(+54) ",
+        "www": "http://",
+        "officeGeoCoordinates": {
+            "lat": "",
+            "lng": ""
+        },
+        "email": {
+            "info": "",
+            "sales": ""
+        }
+    },
+    "theme": {
+        "darkPrimaryColor": "#",
+        "primaryColor": "#",
+        "lightPrimaryColor": "#",
+        "textIcons": "#",
+        "accentColor": "#",
+        "primaryText": "#",
+        "secondaryText": "#"
+    },
+    "partner": {
+        "name": "ConsultAr",
+        "api": {
+            "source": "consultar",
+            "key": "",
+            "url": "http://.wemkteyou.com.ar/mkte_air/json/"
+        }
+    }
+}

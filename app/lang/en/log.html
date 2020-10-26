@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+    <div data-role="page" data-theme="a" id="page-log">
+
+        <!-- CONTENT -->
+        <div data-role="content">
+            <ul data-role="listview">
+                <li class="content-text">
+                    <h3>Report</h3>
+                </li>
+                <li data-role="fieldcontain" class="form-enhanced">
+                    <input id="log-filter" type="text" placeholder="Event filtering" data-clear-btn="true" />
+                    <div class="action-btns">
+                        <button id="log-update" name="submit"
+                                class="ui-btn ui-btn-inline ui-btn-raised ui-btn-margin ui-corner-all clr-primary zmdi-icon">
+                            <i class="zmdi zmdi-refresh"></i>
+                            Refresh
+                        </button>
+                        <button id="log-send-email" name="submit"
+                                class="ui-btn ui-btn-inline ui-btn-raised ui-btn-margin ui-corner-all clr-primary zmdi-icon">
+                            <i class="zmdi zmdi-check"></i>
+                            Send via email
+                        </button>
+                    </div>
+                </li>
+                <li id="log-content" class="content-text separator"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

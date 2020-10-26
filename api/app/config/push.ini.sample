@@ -1,0 +1,17 @@
+; Configuraciones Push.
+;
+; --- Clientes
+;
+; [client]
+;
+
+; ---
+
+[client]
+
+google[api_key] = "AIzaSyCntZDhQ2QkSYUE_R0AlZcjenXsDpefPI8"
+google[project_number] = "1039158215922"
+
+ios[cert] = 'certificate-production-2.pem'
+ios[protocol] = 'ssl'
+ios[passphrase] = 'imaat1125211'

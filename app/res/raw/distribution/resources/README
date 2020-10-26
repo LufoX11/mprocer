@@ -1,0 +1,14 @@
+Images and Stores
+=================
+
+* icon.png
+- mProcer: Base image to generate all app icons (not suitable for stores).
+
+* icon-512-original.png
+- Google Play: HD Icon.
+
+* icon-2014-pad-flat.png
+- iTunes: App Icon.
+
+* logo-1024x500.png
+- Google Play: Featured.

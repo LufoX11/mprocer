@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Map</title>
+    <style>
+
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #more-map-whereWeAre {
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+
+        function initialize() {
+
+            var Config = parent.window.Config,
+                destLatlng = new google.maps.LatLng(Config.get("service.officeGeoCoordinates.lat"), Config.get("service.officeGeoCoordinates.lng"));
+                    options = {
+                    zoom: 16,
+                    center: destLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                },
+                map = new google.maps.Map(document.getElementById("more-map-whereWeAre"), options),
+                infowindow = new google.maps.InfoWindow({
+                    map: map,
+                    position: destLatlng,
+                    maxWidth: 270,
+                    content: ""
+                        + '<div style="font-size: .6em;">'
+                            + "<strong>" + Config.get("service.address") + "</strong><br />"
+                            + [Config.get("service.zipCode"), Config.get("service.city"), Config.get("service.country")].join(" - ") + "<br />"
+                            + Config.get("service.phone") + "<br />"
+                            + '<a href="' + Config.get("service.email.info") + '">' + Config.get("service.email.info") + '</a><br />'
+                        + "</div>"
+                }),
+                marker = new google.maps.Marker({
+                    position: destLatlng,
+                    map: map,
+                    animation: google.maps.Animation.BOUNCE
+                });
+
+            // Trace route if GPS location is available
+            navigator.geolocation.getCurrentPosition(function (position) {
+
+                var directionsDisplay = new google.maps.DirectionsRenderer(),
+                    srcLatlng = pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                    directionsService = new google.maps.DirectionsService(),
+                    request = {
+                        origin: srcLatlng,
+                        destination: destLatlng,
+                        travelMode: google.maps.DirectionsTravelMode.DRIVING
+                    };
+
+                directionsDisplay.setMap(map);
+                directionsService.route(request, function (response, status) {
+
+                    if (status == google.maps.DirectionsStatus.OK) {
+                        directionsDisplay.setDirections(response);
+                    }
+                });
+            });
+        }
+
+    </script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAiHhXOxxI_XZTl9jj5IAyfxb3yXc4n3dY&callback=initialize" async defer></script>
+    <div id="more-map-whereWeAre" class="gmap-target"></div>
+</body>
+</html>
